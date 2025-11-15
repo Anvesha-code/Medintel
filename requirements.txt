@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+streamlit
+sentence-transformers
+python-multipart
