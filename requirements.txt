@@ -4,3 +4,4 @@ streamlit
 sentence-transformers
 python-multipart
 pyttsx3
+gTTS
