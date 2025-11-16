@@ -3,3 +3,4 @@ uvicorn
 streamlit
 sentence-transformers
 python-multipart
+pyttsx3
