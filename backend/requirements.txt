@@ -5,3 +5,13 @@ sentence-transformers
 python-multipart
 pyttsx3
 gTTS
+aiofiles
+qdrant-client
+pdfplumber
+numpy
+pydantic
+requests
+pypdf
+
+
+
