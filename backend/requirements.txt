@@ -12,6 +12,9 @@ numpy
 pydantic
 requests
 pypdf
+pymupdf
+easyocr
+Pillow
 
 
 
