@@ -1,0 +1,15 @@
+gh the self-service as part of the engineer call.
+
+The engineer can launch the self-service wizard on behalf of the user and fill it in during the call as follows:
+
+1. Navigate to the Projects user object page in Dashworks
+
+2. Click on the Self Service URL
+
+<INSERT SCREENSHOT OF PMOBJECT PAGE WITH SELF_SERVICE URL HIGHLIGHTED>
+
+This will launch the self-service wizard for the user on the end of the phone.
+
+Guide the user through the self-service process documented here.
+
+Completion of this process will automatically update the requisite tasks in the E-Mail and Self-Service stage.

@@ -1,0 +1,5 @@
+ely retrieves contextual information from user documents and augments prompts for an LLM (anthropic.claude-3-sonnet-20240229-v1:0) to generate relevant answers to natural language queries.
+
+To design and develop a user-friendly mobile application interface for seamless voice and text interaction, integrated with AWS Amplify and Amazon Cognito for authentication.
+
+To validate the system's performance, accuracy of AI-generated responses, and adherence to security principles for handling sensitive healthcare data.

@@ -1,0 +1,17 @@
+Juriba Ltd
+
+Table of Contents
+
+1 Document Control 2
+
+2 Introduction/Executive Overview 2
+
+Document Control
+
+The document control section describes the revision history and summary of changes made in the document. It will serve as the version control for the contents of the document.
+
+Revision History
+
+Introduction/Executive Overview
+
+The main objective of Juriba’s Dashworks is to provide a central repository for project information to support the migration of end users from their current Windows XP operating system to the new Windows 7 platform.

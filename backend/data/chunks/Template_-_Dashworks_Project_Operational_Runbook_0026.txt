@@ -1,0 +1,7 @@
+te (or does not need to update) the request type. This is because the user already had that request type.
+
+11. Readiness Review
+
+On completion of the initial onboarding and validation stage, the process moves towards a readiness review. In this stage of the process, the user will be reviewed for suitability of moving to a T-30 target date for deployment, and the plan updated for users that cannot be targeted due to one or more of their readiness items being at risk.
+
+In order for a user to move

@@ -1,0 +1,17 @@
+re met:
+
+<INSERT END USER E-MAIL SCREENSHOT>
+
+12. Pre-Migration
+
+The pre-migration stage begins as soon as the target date is set for a user. The pre-migration stage contains all of the activites that happen in the 30 days leading up to the migration. These are a combination of technical and non-technical tasks, including the completion of the self-service validation by the end users.
+
+<INSERT PRE-MIGRATION PROCESS DIAGRAM>
+
+12.1.1. Applicable Stages for Pre-Migration
+
+Stage Name Description
+
+Pre-Migration (T-30) All technical and non-technical T-30 day tasks
+
+12.2.

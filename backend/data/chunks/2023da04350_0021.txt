@@ -1,0 +1,7 @@
+and conversation history management in DynamoDB.
+
+API Development: Creation of secure APIs using Amazon API Gateway and AWS Lambda to facilitate communication between the mobile app and the backend.
+
+Frontend Development: Development of the mobile application using AWS Amplify, focusing on an intuitive user interface for voice/text input and displaying AI-generated responses.
+
+RAG Pipeline Implementation: Integrating Amazon Bedrock (Titan Embeddings and Claude 3 Sonnet) with the vector database for efficient context retrieval and response generation.

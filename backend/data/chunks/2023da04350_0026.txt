@@ -1,0 +1,11 @@
+k
+
+Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), Cloud Computing (AWS), Mobile Application Development, Data Management, Healthcare Technology, and Personal Information Management.
+
+Objectives
+
+The objectives of my project are as follows:
+
+To design a scalable, secure, and serverless cloud architecture for a Generative AI-powered mobile application for personalized healthcare and insurance management.
+
+To implement a robust data ingestion pipeline for diverse medical and insurance documents into a centralized storage solution.

@@ -1,0 +1,13 @@
+list, find the user object in the project system.
+
+Click on the Applications tab
+
+Click on Re-sync Apps…
+
+<INSERT PMOBJECT PAGE WITH APPS LIST AND RESYNC APPS HIGHLIGHTED>
+
+Click on OK to accept the warning
+
+Once the process has completed, Dashworks will inform you whether the operation has been successful in the information bar:
+
+To view the changes, you can look at the audit history by clicking on the Audit History tab for the user. Here you will see any applications that have been added or removed by the re-synchronisation process.

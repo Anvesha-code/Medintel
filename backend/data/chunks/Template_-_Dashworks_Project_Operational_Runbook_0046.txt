@@ -1,0 +1,13 @@
+o re-synchronise multiple users at the same time. In the process, this would apply to all users with a forecast date of T-30. You can obtain this list by using the Task Dashboard (by Object) and using the advanced filters to select a specific date.
+
+Click on Actions -> Bulk Update
+
+Select Resynchronise Applications
+
+Select User
+
+Choose the users whose applications you want to re-sync.
+
+You should end up at a screen like this:
+
+<INSERT BULK UPDATE SCREENSHOT WITH RESYNCHRONISE APPS SELECTED & LIS

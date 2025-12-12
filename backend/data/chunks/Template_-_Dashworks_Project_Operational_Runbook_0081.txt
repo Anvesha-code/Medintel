@@ -1,0 +1,9 @@
+available in the ACTIONS -> BULK UPDATE facility.
+
+15.10. Manually Creating New Applications
+
+In certain circumstances, it may be required that the applications team manually create a new application object (for example, if the application is having more than one future state – an AppV version and an MSI version), then the project team may wish to Sticky Exclude the AppV version and add the MSI version to replace it.
+
+In order to create a new application, click on Onboarding -> Create Objects
+
+Type in the name of the application object you want to create.

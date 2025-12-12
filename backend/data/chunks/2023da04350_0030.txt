@@ -1,0 +1,3 @@
+response generation using Amazon Bedrock's LLMs. The dissertation will focus on demonstrating the technical feasibility, architectural robustness, and core functionalities of the Generative AI-powered personalized healthcare information management system. While the current scope aims for a functional prototype, full-scale production deployment, extensive clinical validation, and integration with external healthcare systems are beyond the immediate scope of this specific dissertation.
+
+Detailed

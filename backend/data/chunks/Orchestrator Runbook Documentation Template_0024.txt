@@ -1,0 +1,1 @@
+Tab=Global Configuration, Field=Service Accounts Used, Description=Use this section to document any Service Accounts or credentials that may be used to connect to various applications such as SQL, Service Desk app, etc., Notes (if applicable)=nan

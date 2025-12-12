@@ -1,0 +1,29 @@
+BITS ID No. 2023da04350
+
+Under the supervision of
+
+Anirudh Chawla, Solution Architect, AWS
+
+BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE
+
+Pilani (Rajasthan) INDIA
+
+(May, 2025)
+
+BIRLA INSTITUTE OF TECHNOLOGY & SCIENCE, PILANI
+
+SECOND SEMESTER 2024-25
+
+DSECLZG628T / AIMLCZG628T DISSERTATION
+
+Dissertation Title : HealthAssist: Generative AI-Powered Mobile App for Personalized Healthcare and Insurance Management
+
+Name of Supervisor : Anirudh Chawla
+
+Name of Student : Shubham Purwar
+
+ID No. of Student : 2023da04350
+
+Courses Relevant for the Project & Corresponding Semester:
+
+1.

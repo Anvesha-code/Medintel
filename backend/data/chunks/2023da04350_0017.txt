@@ -1,0 +1,7 @@
+rative AI-driven approach for its implementation. This methodology is justified for several reasons:
+
+Scalability: AWS serverless services (Lambda, API Gateway, S3, DynamoDB, Aurora) provide inherent scalability, ensuring the application can handle a growing number of users and data without significant operational overhead.
+
+Cost-Effectiveness: The pay-per-use model of serverless computing optimizes operational costs.
+
+Security: Leveraging AWS managed services, especially Amazon Cognito for auth

@@ -1,0 +1,13 @@
+ant for the Project & Corresponding Semester:
+
+1. Applied Machine Learning
+
+2. Data Management for Machine Learning
+
+3. Natural Language Processing
+
+4. Python Fundamentals for Data Science
+
+Abstract
+
+Medical documentation often becomes a significant burden for individuals throughout their lives, leading to considerable challenges in the efficient storage, organization, and retrieval of critical healthcare information. The sheer volume and disparate nature of these documents frequently result in lost or inaccessible data, hindering effective personal health management.

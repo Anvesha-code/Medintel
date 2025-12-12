@@ -1,0 +1,1 @@
+24 hours (9 PM) to map the readiness status of a package in the Application Packaging Workflow Tracking System back to an application in the Analysis system.

@@ -1,0 +1,13 @@
+pulated for a user, their status is Targeted.
+
+Project Configuration
+
+The <Customer Name> Dashworks project has been configured as follows:
+
+Teams
+
+A team is a collection of resources that work together on the project and can view groups that are assigned to them.
+
+Groups
+
+A group is a logical collection of users and computers to be migrated. Users and computers are onboarded into these groups in stage one of the project process. Groups are pre-configured ready for user onboarding. Users and computers can be moved between groups if required.

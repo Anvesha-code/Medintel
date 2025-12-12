@@ -1,0 +1,5 @@
+ore functionality.
+
+Efficient Information Retrieval: The choice of Amazon Aurora PostgreSQL with the pgvector extension is specifically justified by its ability to efficiently store and perform similarity searches on high-dimensional vector embeddings, a critical component for the RAG pipeline to effectively retrieve relevant contextual information.
+
+5. Brief discussion on the Project Work methodology: The project will follow an agile development methodology, emphasizing iterative design, development, and testing.

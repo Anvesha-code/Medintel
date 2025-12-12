@@ -1,0 +1,11 @@
+their self-service, they will receive an e-mail reminder if they meet the criteria below:
+
+E-Mail Template Hook Task Send Schedule
+
+The e-mail looks like this if it is sent:
+
+<INSERT SCREENSHOT OF END USER E-MAIL>
+
+12.8. Engineer Pre-Migration Task List (T-10)
+
+At T-10, irrespective of whether the user has completed self-service, the engineer will update the pre-migration tasks where necessary. Some of these tasks will be updated manually, and some will be automated as designated in the table below.

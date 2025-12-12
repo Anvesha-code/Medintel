@@ -1,0 +1,9 @@
+wlac@amazon.com
+
+Topic of Dissertation: HealthAssist: Generative AI-Powered Mobile App for Personalized Healthcare and Insurance Management
+
+(Signature of Student) (Signature of Supervisor)
+
+Date: 24/05/2024 Date: 24/05/2024
+
+1. The purpose of the work and expected outcome of the work: The primary purpose of this project is to design and develop "HealthAssist," a generative AI-powered mobile application. This application aims to address the significant challenges individuals face in managing their ever-growing volume of medical and insurance documents throughout their lifetime.

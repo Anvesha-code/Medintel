@@ -1,0 +1,5 @@
+Data Handling: Ensures the privacy and security of sensitive personal health information through robust AWS security features and multi-tenancy isolation.
+
+Scalable Solution: Built on a scalable cloud infrastructure, it can accommodate a large user base and growing data volumes.
+
+7. Any other details in support of the work: The project aligns with current trends in digital health and the increasing adoption of AI for personalized services. The specific choice of AWS services, particularly Amazo

@@ -1,0 +1,13 @@
+cation object page, click on the Application tab.
+
+There are four different application categorisations:
+
+• Uncategorised (default)
+
+• Keep – the application will be maintained in the new environment
+
+• Retire – the application is not required in the new environment
+
+• Forward-Path – the application is being forward pathed to either a new version, rolled up with other applications to a standardized version, or forward pathed to a functionally similar application
+
+To set an application to ‘Keep’, simply click on the Keep radiobutton and click on update.

@@ -1,0 +1,9 @@
+s set for each individual <Insert USER/COMPUTER>.
+
+Dashworks Project Overview
+
+The Dashworks project system is a flexible task management tool that is used to control end user migration readiness for deployment. The users are onboarded into the system and moved through the readiness process as follows:
+
+Note that status is set in Dashworks by using the most important populated date. Therefore, if you have Onboarded, Forecast and Targeted dates populated for a user, their status is Targeted.
+
+Pro

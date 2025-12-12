@@ -15,11 +15,12 @@ def normalize_whitespace(text: str) -> str:
     Replace multiple whitespace characters with single spaces, but keep paragraph breaks.
     Also strip trailing/leading whitespace.
     """
+    if text is None:
+        return ""
     # Replace Windows/Mac line endings with \n
     text = text.replace("\r\n", "\n").replace("\r", "\n")
 
-    # Collapse repeated spaces (but keep newlines for paragraph separation)
-    # First, collapse spaces/tabs
+    # Collapse repeated spaces/tabs
     text = re.sub(r"[ \t]+", " ", text)
 
     # Replace sequences of 3+ newlines with exactly two newlines (paragraph boundary)
@@ -95,29 +96,41 @@ def remove_long_empty_sections(text: str, max_empty_lines: int = 2) -> str:
     """
     Collapse sequences of empty lines to at most max_empty_lines.
     """
+    if text is None:
+        return ""
     # Replace sequences of more than max_empty_lines empty lines with max_empty_lines
     pattern = r"(\n\s*){" + str(max_empty_lines + 1) + r",}"
     repl = "\n" * max_empty_lines
     return re.sub(pattern, repl, text)
 
 
-def clean_text_pages(pages: List[dict]) -> Tuple[str, List[str]]:
+def clean_text_pages(pages: List[dict], source_type: str = None) -> Tuple[str, List[str]]:
     """
-    pages: list of {"page_number": int, "text": str}
+    pages: list of {"page_number": int, "text": str, "meta": {...} (optional)}
     Return:
       (full_text, cleaned_pages_list)
-    Steps:
-      - Extract page texts
-      - Remove headers/footers heuristically
-      - Normalize whitespace and remove long empty sections
-      - Recombine to full_text
+
+    Behavior adapts by source_type for structured inputs (spreadsheet/table).
     """
-    raw_pages = [p.get("text", "") or "" for p in pages]
+    # Defensive extraction of text strings
+    raw_pages = []
+    for p in pages:
+        if isinstance(p, dict):
+            raw_pages.append(p.get("text", "") or "")
+        else:
+            # fallback: page is already a string
+            raw_pages.append(str(p or ""))
+
     # Remove obvious garbage pages (very short)
     raw_pages = [p if len(p.strip()) > 0 else "" for p in raw_pages]
 
-    # Detect and remove repeated header/footer lines
-    pages_no_hf = remove_headers_footers_from_pages(raw_pages)
+    # For structured content (tables/spreadsheet) we may skip header/footer removal
+    skip_hf = source_type in ("spreadsheet", "table")
+
+    if not skip_hf:
+        pages_no_hf = remove_headers_footers_from_pages(raw_pages)
+    else:
+        pages_no_hf = raw_pages
 
     # Normalize whitespace and remove long empty runs on each page
     cleaned_pages = []
@@ -136,8 +149,6 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> List[str]
     """
     Split text into chunks of approximately `chunk_size` characters,
     with `overlap` characters overlap between chunks.
-
-    Returns a list of chunk strings.
     """
     if not text:
         return []
@@ -172,6 +183,60 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> List[str]
         if start < 0:
             start = 0
 
+    return [c for c in chunks if c]
+
+
+def chunk_table_text(table_text: str, chunk_size: int = 300, overlap: int = 0) -> List[str]:
+    """
+    Split table-like text into row-aligned chunks. Each row should be a line in table_text.
+    """
+    if not table_text:
+        return []
+    rows = [r.strip() for r in table_text.splitlines() if r.strip()]
+    chunks = []
+    curr = []
+    curr_len = 0
+    for r in rows:
+        r_len = len(r) + 1
+        if curr and (curr_len + r_len > chunk_size):
+            chunks.append("\n".join(curr))
+            curr = [r]
+            curr_len = r_len
+        else:
+            curr.append(r)
+            curr_len += r_len
+    if curr:
+        chunks.append("\n".join(curr))
+    return chunks
+
+
+def chunk_audio_transcript(transcript_text: str, chunk_chars: int = 1500, overlap: int = 100) -> List[str]:
+    """
+    Split a long audio transcript into chunks of approx chunk_chars characters.
+    """
+    if not transcript_text:
+        return []
+    transcript_text = transcript_text.strip()
+    if len(transcript_text) <= chunk_chars:
+        return [transcript_text]
+
+    chunks = []
+    start = 0
+    n = len(transcript_text)
+    while start < n:
+        end = start + chunk_chars
+        chunk = transcript_text[start:end]
+        # try to avoid mid-sentence split
+        if end < n:
+            tail = transcript_text[end:end + 100]
+            m = re.search(r'[.!?]\s', tail)
+            if m:
+                chunk += tail[:m.end()].rstrip()
+                end = end + m.end()
+        chunks.append(chunk.strip())
+        start = end - overlap
+        if start < 0:
+            start = 0
     return [c for c in chunks if c]
 
 

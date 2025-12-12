@@ -1,0 +1,11 @@
+nsert Period> to populate the Dashworks database. Other applications such as in-house written scripts will access the Dashworks information via the Dashworks API.
+
+The following DRAFT diagram displays the data flows:
+
+<INSERT ARCHITECTURE DIAGRAM>
+
+Figure 1. Data Flow between Dashworks and various inputs and output data repositories.
+
+Application System Architecture
+
+Dashworks is comprised of two major components: an SQL 2008 database and an IIS web application server. The IIS application server contains the business logic for the Dashworks application.

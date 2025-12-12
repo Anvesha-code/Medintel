@@ -1,0 +1,2 @@
+Tab=Runbooks, Field=Is Monitor (Y/N):, Description=Use this field to identify if the runbook is identified as a Monitor., Notes (if applicable)=nan
+Tab=Runbooks, Field=Counters:, Description=Not typically recommended or suggested to use as best practice - but some runbooks do include this option., Notes (if applicable)=nan

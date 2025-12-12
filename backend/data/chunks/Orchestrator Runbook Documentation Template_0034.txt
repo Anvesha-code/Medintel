@@ -1,0 +1,1 @@
+Tab=Runbooks, Field=Connection Details (SMTP Server, Network Share, SharePoint, Any other application, DB):, Description=Use this field to identify any connection credentials are identified such as accounts used to connect to SMTP server, databases, service desk application, network shares/SharePoint locations, etc., Notes (if applicable)=nan

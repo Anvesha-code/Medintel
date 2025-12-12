@@ -1,0 +1,2 @@
+Tab=Global Configuration, Field=Variables, Description=Use this section to list all Variables that are being used in your runbooks including the name and full description., Notes (if applicable)=nan
+Tab=Runbooks, Field=Runbook Name, Description=Use this field to identify the name of the runbook. , Notes (if applicable)=nan

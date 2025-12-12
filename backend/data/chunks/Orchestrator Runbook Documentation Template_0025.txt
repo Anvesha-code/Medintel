@@ -1,0 +1,1 @@
+Tab=Global Configuration, Field=Integration Packs Installed, Description=Use this section to list all Integration Packs that have been installed with their corresponding version numbers., Notes (if applicable)=nan

@@ -1,0 +1,9 @@
+ded or removed by the re-synchronisation process.
+
+<INSERT SCREENSHOT OF PMOBJECT PAGE AUDIT HISTORY TAB>
+
+12.2.2. Re-sync the Applications for Multiple Users
+
+Important – The process of resynchronizing multiple user’s application lists is extremely processor intensive. Juriba recommends that no more than 500 users are re-synchronised in one operation. If you receive a timeout error, please reduce the number of users in the list.
+
+It is often more efficient to re-synchronise multiple users at the same time.

@@ -1,0 +1,23 @@
+the Application Information stage, set the AD PACKAGE GROUP NAME to MANUAL
+
+Application Tab for apps less than 10 users
+
+Request Type set to Manual Install
+
+<INSERT SCREENSHOT OF APPLICATION PMOBJECT ADDITIONAL INFORMATION SCREEN>
+
+Package AD Group Name set to MANUAL.
+
+15.9. Bulk-Updating Application Project Details
+
+The following items can be bulk updated in Dashworks:
+
+• Application Rationalisation Status
+
+o Keep
+
+o Retire
+
+o Forward Path Multiple Apps To Single App
+
+• Application Readiness C

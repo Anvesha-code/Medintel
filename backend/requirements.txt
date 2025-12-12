@@ -15,6 +15,25 @@ pypdf
 pymupdf
 easyocr
 Pillow
+python-magic
+python-magic-bin # on Windows, choose appropriate
+pytesseract
+python-docx
+python-pptx
+pandas
+openpyxl
+xlrd
+beautifulsoup4
+lxml
+whisper # openai/whisper - may need ffmpeg and extra system deps
+torch # required by whisper (choose CPU/GPU wheel appropriate)
+ffmpeg-python
+python-multipart
+# Optional / helpful
+easyocr # alternative OCR engine
+pip>=23.1
+setuptools>=65
+wheel
 
 
 

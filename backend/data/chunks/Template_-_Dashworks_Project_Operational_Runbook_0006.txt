@@ -1,0 +1,9 @@
+gives a detailed description of the application. It is organized into business and technical descriptions:
+
+Business Overview
+
+The main objective of Dashworks is to provide a central repository for Windows 7 project information to support the migration of end users to the new operating system platform. Dashworks will provide the single source of project truth for the programme, and be used for all elements of user migration readiness management.
+
+Technical Overview
+
+The main customer of the Dashworks application is the <Project Name> project team.

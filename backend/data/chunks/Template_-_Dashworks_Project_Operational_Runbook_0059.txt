@@ -1,0 +1,19 @@
+ll be automated as designated in the table below.
+
+Step Task Automated or Manual Action
+
+12.8.1. Engineer Pre-Migration Tasks
+
+All tasks relating to the pre-migration will be held in the Dashworks system as follows:
+
+Tasks Stage
+
+Self-service tasks E-Mail & Self-Service
+
+Engineer specific tasks Pre-migration
+
+The engineer tasks are a combination of survey type questions with the end user, and technical tasks that prepare a user for migration.
+
+12.8.2. Engineer Pre-Migration Task Updates
+
+As part

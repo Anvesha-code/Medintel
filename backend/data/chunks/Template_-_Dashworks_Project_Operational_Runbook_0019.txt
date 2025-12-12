@@ -1,0 +1,13 @@
+s into one group during the onboarding operation.
+
+After clicking on Continue, you are presented with a review screen. Check the details carefully to ensure you have the right users that will be onboarded to the right groups.
+
+<INSERT REVIEW PAGE SCREENSHOT>
+
+Best Practice: We recommend that this list is saved to Excel during this phase for future reference.
+
+The users and computers can have 3 statuses:
+
+Onboard – the user is ok to onboard as a new user
+
+Re-Onboard – the user has been previously

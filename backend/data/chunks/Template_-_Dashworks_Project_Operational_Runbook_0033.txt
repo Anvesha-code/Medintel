@@ -1,0 +1,11 @@
+ed list and verify that their status is Forecast.
+
+Information: If you see a ‘0’ (zero) in the column it means that Dashworks could not update the date. This is because either the user already had that date set, or the date task is not applicable to their request type.
+
+11.1. The Forecast Plan
+
+The <Customer Name> migration will be forecast based on engineer capacity and application readiness. The initial forecast will be set by the project onboarders.
+
+<INSERT BIG RULES HERE IF ANY ARE SET FOR THE PROJECT>
+
+11.1.1.

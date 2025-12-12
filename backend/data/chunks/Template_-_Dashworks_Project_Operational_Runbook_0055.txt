@@ -1,0 +1,9 @@
+ur statuses where further action is now required.
+
+<INSERT SCREENSHOT OF SELF-SERVICE ADDITIONAL QUESTIONS>
+
+By clicking on Save & Continue, the user is writing the task statuses back into the Dashworks database for action and automatically setting colours where applicable.
+
+12.5.5. Step 5 – Review Choices
+
+Finally, the user is presented with a review screen displaying all of the selections they have made. If they wish to amend any of these selections, they can do so by clicking on the appropriate section of the Navigation Menu.

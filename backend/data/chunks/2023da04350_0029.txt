@@ -1,0 +1,5 @@
+rinciples for handling sensitive healthcare data.
+
+Scope of Work
+
+Scope of this dissertation is to design and develop a proof-of-concept for the HealthAssist mobile application backend and its integration with a mobile frontend. This includes the complete data flow from document upload to AI-powered query response, encompassing authentication, secure data storage for vector embeddings and conversation history, embedding generation, context retrieval via pgvector, and response generation using Amazon Bedrock's LLMs.

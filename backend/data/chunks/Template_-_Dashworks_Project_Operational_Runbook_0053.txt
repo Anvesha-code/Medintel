@@ -1,0 +1,7 @@
+ks database.
+
+12.5.3. Step 3 – Application Validation
+
+The user is now presented with a screen which displays their current applications list (from their Windows XP machine) and their future applications list (the applications they will currently receive as part of their Windows 7 migration). The user should then confirm whether or not they need these applications for their migration by selecting either ‘Yes’ or ‘No’ from the drop down list.
+
+<INSERT SCREENSHOT OF SELF-SERVICE APPLICATIONS PAGE>

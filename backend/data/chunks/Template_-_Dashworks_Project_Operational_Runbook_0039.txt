@@ -1,0 +1,11 @@
+reviewed with the applications team to provide a sensible plan which will then require further amendments of the forecast date on the user objects as documented earlier.
+
+<INSERT SCREENSHOT OF APPLICATIONS ALL DASHBOARD WITH REQUIRED BY DATE SET AND FORECAST SELECTED>
+
+11.3. Setting the Target Date
+
+If the user or users are ready to move forward in the process, the next step is to set the target date.
+
+The Target Date lives in the stage Readiness Review (T-30)
+
+You can set the target date by following the same steps as outlined in the section entitled ‘Setting the Forecast Date’.

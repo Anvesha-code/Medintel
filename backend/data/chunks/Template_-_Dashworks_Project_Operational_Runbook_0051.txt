@@ -1,0 +1,13 @@
+orrect and that all applications are required
+
+3. That other questions are asked pertaining to the state of the user (e.g. data copied)
+
+12.5.1. Step 1 – Self-Service Introduction
+
+The user is presented with the following welcome screen at the start of the process:
+
+<INSERT SCREENSHOT OF SELF-SERVICE PORTAL>
+
+12.5.2. Step 2 – Computer Ownership Validation
+
+By clicking on Continue from the welcome page, the user is presented with a screen that asks them to confirm the machine or machines that the

@@ -1,0 +1,13 @@
+has been added which is not ready for migration.
+
+12.2.1. Re-sync the Applications for an Individual User
+
+You can perform a re-sync of the applications for a specific user from their user object page. This process will perform the following actions:
+
+Check project applications list vs analysis applications list
+
+If apps in analysis but not in project, onboard application and add to user
+
+If apps in project but not in analysis, remove app from user
+
+In order to re-sync the applications list, find the user object in the project system.

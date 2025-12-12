@@ -1,0 +1,13 @@
+tion:
+
+<INSERT SCREENSHOT OF POST-MIGRATIO ENGINEER TASKS>
+
+Once the tasks are completed, the engineer will set the radiobutton values and populate the Completed Date task. Populating this task will move the user to a status of completed.
+
+15. Applications Management
+
+The applications management stage runs in parallel to all of the readiness stages. Therefore, we are handling it as a separate process within this runbook. This runbook will focus on the Projects side of Dashworks.
+
+<INSERT APPLICATIONS PROCESS DIAGRAM>
+
+15.1.

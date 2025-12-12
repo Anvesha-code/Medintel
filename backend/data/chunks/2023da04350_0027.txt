@@ -1,0 +1,7 @@
+ce documents into a centralized storage solution.
+
+To leverage Amazon Bedrock's foundation models (amazon.titan-embed-text-v2:0) for generating high-dimensional vector embeddings from user documents.
+
+To establish a secure and efficient vector database using Amazon Aurora PostgreSQL with the pgvector extension, ensuring multi-tenant data isolation through row-level security.
+
+To develop a Retrieval-Augmented Generation (RAG) pipeline that accurately retrieves contextual information from user doc

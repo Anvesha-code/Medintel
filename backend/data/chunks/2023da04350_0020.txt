@@ -1,0 +1,7 @@
+izing iterative design, development, and testing. Key phases include:
+
+Requirement Analysis: Detailed understanding of user needs for healthcare information management.
+
+Architectural Design: Comprehensive design of the cloud-based serverless architecture, specifying AWS services and their interactions (as outlined in the provided diagram).
+
+Backend Development: Implementation of data ingestion pipelines (S3, EventBridge, Lambda), embedding generation using Amazon Bedrock, vector storage in Aurora PostgreSQL with pgvector, and conversation history management in DynamoDB.

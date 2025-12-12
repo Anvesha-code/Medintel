@@ -1,0 +1,2 @@
+Tab=Runbooks, Field=Variables:, Description=Use this field to identify all the 'Variables' used in the runbook., Notes (if applicable)=nan
+Tab=Runbooks, Field=Varialbe Path/Location:, Description=Use this field to identify the folder path where the variable is located., Notes (if applicable)=nan

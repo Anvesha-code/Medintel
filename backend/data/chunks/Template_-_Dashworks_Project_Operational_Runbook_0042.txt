@@ -1,0 +1,7 @@
+technical and non-technical T-30 day tasks
+
+12.2. Re-sync the Applications
+
+The first step in moving the user forward in the pre-migration stage is to re-synchronise their application list. This process ensures that any new applications that have appeared in the live environment will be onboarded into the project.
+
+Important - Re-synchronising the user’s applications list may have the impact of turning a user to a different colour because a new application has been added which is not ready for migration.

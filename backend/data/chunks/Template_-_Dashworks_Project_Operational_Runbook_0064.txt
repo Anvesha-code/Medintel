@@ -1,0 +1,13 @@
+igration is confirmed, the process will continue.
+
+13.2. Automated E-Mail Communication 4 (T-1)
+
+The following e-mail will be sent to the user the day prior to migration:
+
+<INSERT SCREENSHOT OF END USER E-MAIL>
+
+This mail reminds the end users that they need to ensure any local (C: drive) data has been copied from their devices to the network drive.
+
+13.3. Migration Day (T0)
+
+The engineer will now perform the required migration. The process will vary for each migration type (virtual vs physical

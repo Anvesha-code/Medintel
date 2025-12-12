@@ -1,0 +1,13 @@
+scheduling and migration.
+
+System Availability
+
+The Dashworks Analysis System is available at all times apart from when new data is being transformed into the system.
+
+The Dashworks Project System is available at all times. However, some operations are limited when new data is being transformed into the system (e.g. application resync/self-service/onboarding).
+
+System Access
+
+The Dashworks Analysis System can be accessed by any user with a valid <Domain Name> active directory domain login.
+
+The Dashworks Project System can be accessed by any user with one or more valid project system roles.

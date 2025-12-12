@@ -1,0 +1,5 @@
+(Parent/Main Folder):=Testing Document, Path (Folder Location):=\Kelverion\Test, Connection Details (SMTP Server, Network Share, SharePoint, Any other application, DB):=SMTP = IT@Kelverion.com
+svc_helpdesk = \\servername\folder
+svc_keldb = orchestrator\integrated_security
+anonymous = http://company\information, Is Monitor (Y/N):=N, Counters:=N, Variables:=SiteName
+Location

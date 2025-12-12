@@ -1,0 +1,11 @@
+vary for each migration type (virtual vs physical / replace vs rebuild) and the outcome will be that the user is presented with their new desktop environment.
+
+As part of the migration process, the engineer will complete four key tasks in Dashworks:
+
+<INSERT SCREENSHOT OF ENGINEER TASK LIST>
+
+Once confirmed, the engineer will update all tasks. By populating the task Migrated Date, the status of the user will turn to Migrated.
+
+14. Post-Migration
+
+The post-migration stage begins one day after the end user has migrated to their new Windows 7 device.

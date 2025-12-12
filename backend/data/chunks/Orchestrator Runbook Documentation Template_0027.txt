@@ -1,0 +1,2 @@
+Tab=Runbooks, Field=Description, Description=Use this field to describe the purpose of the runbook., Notes (if applicable)=nan
+Tab=Runbooks, Field=Runbook Server Execution Location (Default or Special), Description=Use this field to record the name of the runbook server(s) where the runbook is executed.

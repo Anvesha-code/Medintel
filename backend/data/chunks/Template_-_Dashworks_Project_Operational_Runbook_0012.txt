@@ -1,0 +1,11 @@
+user with one or more valid project system roles.
+
+Dashworks Analysis System
+
+The Dashworks Analysis System is accessed at <Dashworks URL>
+
+Dashworks Project System
+
+The Dashworks Project System is accessed at <Dashworks URL>. It requires a login via a valid <Domain Name> domain account before the system can be used.
+
+The project system at <Customer Name> has been configured for <Insert USER/COMPUTER> based scheduling. This means that users have the schedule date is set for each individual <Insert USER/COMPUTER>.

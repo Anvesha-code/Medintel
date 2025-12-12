@@ -1,0 +1,9 @@
+her a user can complete the self-service process. The setting for self-service is held in the E-Mail and Self-Service stage for every user:
+
+If enabled, on receipt of the T-15 e-mail, the user is presented with a link to their self-service page in Dashworks. Here, the user is guided through a wizard that will ask them to validate three key pieces of information:
+
+1. That the PC ownership from the inventory system is correct and the purpose of the PC
+
+2. That the application inventory is correct and that all applications are required
+
+3.

@@ -1,0 +1,3 @@
+Service Accounts Used:=nan, Name=nan, Purpose=nan, Server=nan, Description=nan
+Service Accounts Used:=Integration Packs Installed:, Name=Name (Including Version), Purpose=Description/Purpose, Server=Source, Description=nan
+Service Accounts Used:=nan, Name=Kelverion SQL Server 3.1, Purpose=Capture information from multiple databases, Server=Kelverion, Description=nan

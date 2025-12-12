@@ -1,0 +1,19 @@
+will find a drop down selector for Request Type.
+
+Set the request type using the date control
+
+Click on the button Update. You should see that the user has a new request type.
+
+<INSERT USER PMOBJECT PAGE WITH REQUEST TYPE SELECTED>
+
+10.3.2.2. Setting the Request Type for Multiple Users in Multiple Groups
+
+The request type for multiple users can be set by using the bulk update function in the Dashworks application.
+
+Click on Actions -> Bulk Update
+
+Click on Set request type
+
+Select Users
+
+Click

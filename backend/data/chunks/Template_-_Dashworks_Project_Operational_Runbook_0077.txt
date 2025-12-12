@@ -1,0 +1,11 @@
+Friendly Name entry with your new friendly name.
+
+15.8. Managing Applications Less Than XX Users
+
+The team has decided that applications impacting less than XX users will not be packaged as part of the <Project Name> project. As such, these applications need to be handled differently. as they will never receive readiness status.
+
+The process for handling applications with less than XX users is as follows:
+
+1. After all previous applications have been forward pathed, check the count of users that require an application from the Application (All) dashboard
+
+2.

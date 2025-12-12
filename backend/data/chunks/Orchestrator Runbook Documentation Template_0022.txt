@@ -1,0 +1,1 @@
+(Parent/Main Folder):=DevOps Sync, Path (Folder Location):=\Ticket and DevOps Synchronization v1.1\10.0-Source Heldesk\10.1 Monitors\10.1.1-Monitor SCSM New, Connection Details (SMTP Server, Network Share, SharePoint, Any other application, DB):=DB = PDS_Live

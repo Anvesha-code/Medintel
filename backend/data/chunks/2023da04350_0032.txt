@@ -1,0 +1,9 @@
+ito, Amazon S3, Amazon DynamoDB, and AWS Amplify.
+
+Recent articles from IEEE Transactions on Medical Informatics, Journal of the American Medical Informatics Association (JAMIA) focusing on AI in healthcare and digital health.
+
+PostgreSQL pgvector extension documentation and GitHub repository.
+
+AWS Well-Architected Framework Documentation to create architecture flow.
+
+Supervisor’s Rating of the Technical Quality of this Dissertation Outline

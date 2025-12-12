@@ -1,0 +1,5 @@
+pecific choice of AWS services, particularly Amazon Bedrock with its managed foundation models and Aurora PostgreSQL with pgvector, positions HealthAssist at the forefront of leveraging advanced cloud AI capabilities for practical, real-world problems in healthcare. The RAG approach is particularly powerful for ensuring the accuracy and grounding of AI-generated responses in factual user data, mitigating common LLM limitations.
+
+Broad Area of Work
+
+Artificial Intelligence (AI), Machine Learning

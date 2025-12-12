@@ -1,0 +1,21 @@
+as names, locations and departments to Dashworks.
+
+Hardware
+
+Table - Hardware
+
+Software
+
+Table - Software
+
+Database
+
+Table - Database
+
+Application Operations
+
+The Dashworks system has two major components, the Analysis System and the Project System. The Analysis System is used to view the data warehouse, validate information and model the data. The Project System is a project management engine that is designed to track the readiness of users for scheduling and migration.
+
+System Availability
+
+Th

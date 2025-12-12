@@ -1,0 +1,15 @@
+calendar date. However, at this point you are interested in the current ‘Forecast’ date to show how many deployments have been scheduled for each group per calendar date.
+
+Click on show filters
+
+Now select the deployment team to see all deployments specific to that region.
+
+<INSERT SCREENSHOT OF DEPLOYMENT DASHBOARD>
+
+You can use this view to also see the application detail as a result of the schedule.
+
+Click on the group name
+
+Click on the tab named Applications
+
+<INSERT SCREENSHOT OF THE APPL

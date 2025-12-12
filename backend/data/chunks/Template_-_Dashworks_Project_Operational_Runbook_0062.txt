@@ -1,0 +1,13 @@
+isite tasks in the E-Mail and Self-Service stage.
+
+Automation will update the ‘Self Service Complete’ task within 24 hours. This can also be set to ‘Yes’ manually by the engineer.
+
+12.9. Automated E-Mail Communication 3 (T-7)
+
+Assuming that the work schedule is moving to plan, the Dashworks system will send a further e-mail to the end user reminding them of the migration to come 7 days before the scheduled date in Dashworks.
+
+<INSERT
+
+13. Migration
+
+The migration stage begins two days prior to the end user moving to their new Windows 7 device.

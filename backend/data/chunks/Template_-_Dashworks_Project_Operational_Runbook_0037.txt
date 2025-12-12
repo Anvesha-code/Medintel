@@ -1,0 +1,9 @@
+, and agreed with the application packaging team.
+
+11.2.1. Understanding the Application Requirement Dates
+
+In order for the project as a whole to deliver the required deployment volumes, the applications team must be able to deliver the applications prior to the scheduled dates. By setting a forecast date, you can now model the deployment plan and obtain a better understanding of the application requirements.
+
+Click on Dashboards -> Application (All)
+
+This Dashboard shows all of the applications in scope across the entire project.

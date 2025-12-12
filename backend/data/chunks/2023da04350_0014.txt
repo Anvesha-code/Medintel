@@ -1,0 +1,3 @@
+chitectures. The use of cloud-native serverless architectures (e.g., AWS Lambda, API Gateway) for scalable and secure application deployment is also a well-established practice in modern software development.
+
+3. Brief discussion on the existing process and its limitations: The existing process for managing personal healthcare and insurance documents is largely manual, fragmented, and inefficient. Individuals typically receive physical documents (e.g., policy papers, medical reports, bills) or a

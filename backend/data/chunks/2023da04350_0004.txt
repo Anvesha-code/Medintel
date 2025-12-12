@@ -1,0 +1,3 @@
+reater control over one's health journey.
+
+HealthAssist is built upon a robust architecture leveraging a suite of Amazon Web Services (AWS) technologies. At its core, the application securely stores vector embeddings of user-specific insurance and healthcare documents within Amazon Aurora PostgreSQL, utilizing the pgvector extension. This strategic choice allows for highly efficient similarity searches on large datasets of ML-generated embeddings. A crucial aspect of HealthAssist's design is its

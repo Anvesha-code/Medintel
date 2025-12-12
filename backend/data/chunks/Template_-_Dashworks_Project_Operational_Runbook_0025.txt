@@ -1,0 +1,21 @@
+e
+
+Click on Set request type
+
+Select Users
+
+Click on Choose Users…
+
+Either paste in the LOGIN ID of the users, or find them in the database by selecting the browse button
+
+Click on Select Users
+
+Set the desired Request Type
+
+Click on Perform Update
+
+<INSERT SCREENSHOT WITH BULK UPDATE USERS SELECTED FOR NEW REQUEST TYPE>
+
+Click on one of the objects in the updated list and verify that their request type is set to the desired value.
+
+Information: If you see a ‘0’ (zero) in the column it means that Dashworks could not update (or does not need to update) the request type.
