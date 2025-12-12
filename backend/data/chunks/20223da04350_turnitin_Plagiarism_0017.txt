@@ -1,0 +1,5 @@
+ector embeddings from users' insurance documents. These embeddings are then central to the application's Retrieval-Augmented Generation (RAG) approach. When a user poses a question, the HealthAssist mobile app generates embeddings for the query and performs a
+Page 10 of 41 - Integrity Submission
+Page 10 of 41 - Integrity Submission
+
+6 context-based similarity search within the PostgreSQL database to identify relevant information from the stored documents. This retrieved information then augments

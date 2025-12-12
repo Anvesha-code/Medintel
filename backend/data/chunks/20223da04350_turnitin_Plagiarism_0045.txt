@@ -1,0 +1,5 @@
+Simplified configuration and deployment
+ComputeAWS Lambda: Serverless functions for executing backend logic
+Databases and StorageAmazon Aurora PostgreSQL: Secure, resilient and scalable database with pgvectorAmazon S3: Storage for user-uploaded documentsAmazon DyanamoDB: Fast and flexible NoSQL database for session and metadata
+AI & ML ServicesAmazon Bedrock: Generative AI for real-time insights and responses
+SecurityAmazon Cognito: Secure user authentication with SAML federationAWS Secrets Mana

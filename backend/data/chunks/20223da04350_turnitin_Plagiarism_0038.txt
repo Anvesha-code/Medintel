@@ -1,0 +1,5 @@
+h capabilities across large document collections. Studies have shown that vector-based approaches to medical document retrieval significantly outperform traditional keyword-based search methods, particularly when dealing with complex medical terminology and synonymous expressions.
+Page 21 of 41 - Integrity Submission
+Page 21 of 41 - Integrity Submission
+
+17 Chapter 3: System Architecture and Design 3.1 Cloud-Native Architecture Overview The HealthAssist architecture follows a serverless, cloud-native approach leveraging Amazon Web Services (AWS) ecosystem.

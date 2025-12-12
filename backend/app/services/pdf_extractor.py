@@ -2,7 +2,6 @@
 
 import io
 from typing import Dict, List, Any
-
 import fitz  # PyMuPDF
 from PIL import Image
 import numpy as np

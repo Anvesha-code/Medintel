@@ -1,0 +1,13 @@
+S3 Simple Storage Service
+VPC Virtual Private Cloud
+9
+10
+21
+Page 12 of 41 - Integrity Submission
+Page 12 of 41 - Integrity Submission
+
+8 List of Tables 1.1 Project Objectives Achievement Status ……………………………………………….13 1.3 AWS Services Implementation Status ………………………………………………….22
+Page 13 of 41 - Integrity Submission
+Page 13 of 41 - Integrity Submission
+
+9 List of Figures Figure 1: Knowledge Base and RAG ………………………………………………………. 19 Figure 2: Customized RAG Workflow…………………………………………………… 19 Figure 3: Technology Stack…………………………………………………………………..

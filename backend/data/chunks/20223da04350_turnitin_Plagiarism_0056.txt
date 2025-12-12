@@ -1,0 +1,6 @@
+ts configured • Continuous integration/continuous deployment (CI/CD) pipelines designed • Monitoring and logging infrastructure established[1]
+26
+Page 31 of 41 - Integrity Submission
+Page 31 of 41 - Integrity Submission
+
+27 Chapter 6: Challenges and Solutions 6.1 Technical Challenges The primary technical challenges encountered during the project period include: Vector Database Performance: Optimizing the pgvector extension for handling large volumes of healthcare documents while maintaining fast similarity search capabilities has required extensive research and testing.

@@ -1,0 +1,12 @@
+representations that capture semantic meaning[1]. Query processing utilizes similarity search capabilities to retrieve relevant document sections, which are then used to augment prompts for the anthropic.claude-3-sonnet-20240229-v1:0 model. This approach ensures that responses are grounded in the user's actual healthcare data rather than general medical knowledge.
+19
+Page 23 of 41 - Integrity Submission
+Page 23 of 41 - Integrity Submission
+
+19
+
+Page 24 of 41 - Integrity Submission
+Page 24 of 41 - Integrity Submission
+
+20
+ © 2025, Amazon Web Services, Inc.

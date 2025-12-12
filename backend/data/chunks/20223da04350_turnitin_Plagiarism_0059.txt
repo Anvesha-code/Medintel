@@ -1,0 +1,5 @@
+or handling and monitoring capabilities.
+Page 32 of 41 - Integrity Submission
+Page 32 of 41 - Integrity Submission
+
+28 Chapter 7: Future Work Plan 7.1 Remaining Development Tasks The remaining development work for the project includes: Frontend Integration & Testing • Develop mobile application interface using AWS Amplify • Implement voice and text input capabilities • Conduct end-to-end system testing • Perform security auditing and performance optimization 7.2 Risk Mitigation To ensure project success, the following risk mitigation strategies have been identified: 1.
