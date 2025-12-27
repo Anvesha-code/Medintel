@@ -1,3 +1,3 @@
-al information with remarkable ease and accuracy. This not only streamlines administrative tasks but also equips individuals with the knowledge to make informed decisions about their health and financial well-being. By simplifying access to complex medical and insurance data, HealthAssist stands as a testament to the transformative potential of Generative AI in personalizing and democratizing healthcare management, ultimately fostering a more engaged and empowered patient community.
+rity search within the PostgreSQL database to identify relevant information from the stored documents. This retrieved information then augments the prompt for the Large Language Model (LLM), anthropic.claude-3-sonnet, enabling it to generate precise and contextually relevant answers to user queries.
 
-BIRLA INSTI
+Through its intuitive voice and text interface, HealthAssist empowers users to effortlessly navigate their healthcare landscape. Whether it's locating nearby doctors, checking insurance coverage det

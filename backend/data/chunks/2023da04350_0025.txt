@@ -1,5 +1,9 @@
-pecific choice of AWS services, particularly Amazon Bedrock with its managed foundation models and Aurora PostgreSQL with pgvector, positions HealthAssist at the forefront of leveraging advanced cloud AI capabilities for practical, real-world problems in healthcare. The RAG approach is particularly powerful for ensuring the accuracy and grounding of AI-generated responses in factual user data, mitigating common LLM limitations.
+nal health.
 
-Broad Area of Work
+6. Benefits derivable from the work: HealthAssist offers significant benefits:
 
-Artificial Intelligence (AI), Machine Learning
+Enhanced Information Accessibility: Users can quickly and easily access critical healthcare and insurance information through natural language queries.
+
+Improved Health Management: Empowers individuals to make more informed decisions about their healthcare by providing instant access to relevant data.
+
+Reduced Administrative Burden: Eliminates the need for manual searching through documents, saving time

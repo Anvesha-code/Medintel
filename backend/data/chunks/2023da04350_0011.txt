@@ -1,3 +1,13 @@
-nd insurance documents throughout their lifetime. The expected outcome is a user-friendly and secure mobile solution that allows individuals to effortlessly store, organize, and, most importantly, retrieve crucial healthcare information through natural language queries. Ultimately, HealthAssist is designed to empower users with better control over their health data, leading to more informed decision-making regarding their healthcare and insurance.
+ation and Experience: Mtech in Computer Science with 12+ Years of exprerience
 
-2. Literature review done in connection with th
+Official E- mail ID of Supervisor: achawlac@amazon.com
+
+Topic of Dissertation: HealthAssist: Generative AI-Powered Mobile App for Personalized Healthcare and Insurance Management
+
+(Signature of Student) (Signature of Supervisor)
+
+Date: 24/05/2024 Date: 24/05/2024 
+
+HealthAssist: Generative AI-Powered Mobile App for Personalized Healthcare and Insurance Management
+
+1. The purpose of the work and expected outcome of the

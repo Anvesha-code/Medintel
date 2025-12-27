@@ -1,5 +1,9 @@
-rinciples for handling sensitive healthcare data.
+y project are as follows:
 
-Scope of Work
+To design a scalable, secure, and serverless cloud architecture for a Generative AI-powered mobile application for personalized healthcare and insurance management.
 
-Scope of this dissertation is to design and develop a proof-of-concept for the HealthAssist mobile application backend and its integration with a mobile frontend. This includes the complete data flow from document upload to AI-powered query response, encompassing authentication, secure data storage for vector embeddings and conversation history, embedding generation, context retrieval via pgvector, and response generation using Amazon Bedrock's LLMs.
+To implement a robust data ingestion pipeline for diverse medical and insurance documents into a centralized storage solution.
+
+To leverage Amazon Bedrock's foundation models (amazon.titan-embed-text-v2:0) for generating high-dimensional vector embeddings from user documents.
+
+To establish a secure and eff

@@ -1,3 +1,7 @@
-response generation using Amazon Bedrock's LLMs. The dissertation will focus on demonstrating the technical feasibility, architectural robustness, and core functionalities of the Generative AI-powered personalized healthcare information management system. While the current scope aims for a functional prototype, full-scale production deployment, extensive clinical validation, and integration with external healthcare systems are beyond the immediate scope of this specific dissertation.
+rom user documents.
 
-Detailed
+To establish a secure and efficient vector database using Amazon Aurora PostgreSQL with the pgvector extension, ensuring multi-tenant data isolation through row-level security.
+
+To develop a Retrieval-Augmented Generation (RAG) pipeline that accurately retrieves contextual information from user documents and augments prompts for an LLM (anthropic.claude-3-sonnet-20240229-v1:0) to generate relevant answers to natural language queries.
+
+To design and develop a user-friendly mo

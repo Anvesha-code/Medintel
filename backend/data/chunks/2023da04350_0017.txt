@@ -1,7 +1,7 @@
-rative AI-driven approach for its implementation. This methodology is justified for several reasons:
+or insurers. This leads to several limitations:
 
-Scalability: AWS serverless services (Lambda, API Gateway, S3, DynamoDB, Aurora) provide inherent scalability, ensuring the application can handle a growing number of users and data without significant operational overhead.
+Disorganization and Loss: Documents are often misplaced, lost, or stored in an unsystematic manner, making retrieval difficult or impossible.
 
-Cost-Effectiveness: The pay-per-use model of serverless computing optimizes operational costs.
+Time-Consuming Retrieval: Finding specific information (e.g., insurance coverage for a particular procedure, a past diagnosis date) requires extensive manual searching through piles of paper or navigating multiple online systems.
 
-Security: Leveraging AWS managed services, especially Amazon Cognito for auth
+Lack of Centralized Access: There is no single, unified platform where an ind

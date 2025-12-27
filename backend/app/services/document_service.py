@@ -1,117 +1,84 @@
 from pathlib import Path
-from typing import Optional
-
-from app.core.config import settings
 from app.utils.file_type import detect_file_type
-
+from app.services.extraction_dispatcher import extract_text
 from app.services.text_processing import (
-    clean_text_pages,
+    clean_text_blocks,
     chunk_text,
     chunk_table_text,
-    chunk_audio_transcript,
-    save_chunks_locally,
+    save_chunks_locally
 )
-from app.services.pdf_extractor import extract_text_from_pdf
-from app.services.image_extractor import extract_text_from_image
-from app.services.docx_extractor import extract_text_from_docx
-from app.services.pptx_extractor import extract_text_from_pptx
-from app.services.spreadsheet_extractor import extract_text_from_spreadsheet
-from app.services.html_extractor import extract_text_from_html
-from app.services.audio_transcriber import transcribe_audio
-from app.services.txt_extractor import extract_text_from_txt
+from app.db.db import get_connection
 
 
 def process_upload(file_bytes: bytes, filename: str) -> dict:
+    # ---- Detect file type ----
     mime, ext = detect_file_type(filename, file_bytes)
-    mime = mime or ""
-    ext = (ext or "").lower()
 
-    source_type: Optional[str] = None
-    extract_result: Optional[dict] = None
+    # ---- Extract raw content ----
+    extraction = extract_text(file_bytes, filename, mime)
+    text_blocks = extraction["text_blocks"]
+    meta = extraction.get("meta", {})
 
-    # ---------- EXTRACTION ----------
-    if "pdf" in mime or ext == "pdf":
-        extract_result = extract_text_from_pdf(file_bytes)
-        source_type = "pdf"
+    page_count = meta.get("page_count")
+    sheet_count = meta.get("sheet_count")
+    language = meta.get("language")
 
-    elif mime.startswith("image/") or ext in ("jpg", "jpeg", "png", "tiff", "bmp"):
-        extract_result = extract_text_from_image(file_bytes)
-        source_type = "image"
+    # ---- Clean text ----
+    cleaned_blocks = clean_text_blocks(text_blocks)
 
-    elif ext in ("docx", "doc"):
-        extract_result = extract_text_from_docx(file_bytes)
-        source_type = "docx"
+    # ---- Chunking ----
+    chunks = []
+    for block in cleaned_blocks:
+        if block["structured"]:
+            chunks.extend(
+                chunk_table_text(
+                    block["raw_text"],
+                    headers=block.get("headers")
+                )
+            )
+        else:
+            chunks.extend(chunk_text(block["raw_text"]))
 
-    elif ext in ("ppt", "pptx"):
-        extract_result = extract_text_from_pptx(file_bytes)
-        source_type = "pptx"
+    # ---- Save document metadata (DB) ----
+    conn = get_connection()
+    cur = conn.cursor()
 
-    elif ext in ("xls", "xlsx", "csv"):
-        extract_result = extract_text_from_spreadsheet(file_bytes, filename=filename)
-        source_type = "spreadsheet"
+    cur.execute(
+        """
+        INSERT INTO documents
+        (filename, file_type, page_count, sheet_count, language, extraction_status)
+        VALUES (?, ?, ?, ?, ?, ?)
+        """,
+        (filename, ext, page_count, sheet_count, language, "CHUNKED")
+    )
+    document_id = cur.lastrowid
 
-    elif ext in ("html", "htm") or "text/html" in mime:
-        extract_result = extract_text_from_html(file_bytes)
-        source_type = "html"
-
-    elif mime.startswith("audio/") or ext in ("mp3", "wav", "m4a", "ogg"):
-        if not settings.ENABLE_AUDIO:
-            raise ValueError("Audio transcription disabled")
-        extract_result = transcribe_audio(file_bytes, filename=filename)
-        source_type = "audio"
-
-    elif mime.startswith("text/") or ext in ("txt", "md", "log"):
-        extract_result = extract_text_from_txt(file_bytes)
-        source_type = "text"
-
-    else:
-        raise ValueError(f"Unsupported file type: {mime}/{ext}")
-
-    if not extract_result or "pages" not in extract_result:
-        raise RuntimeError("Extractor returned no pages")
-
-    # ---------- CLEANING ----------
-    pages = extract_result["pages"]
-    meta = extract_result.get("meta", {})
-
-    full_text, cleaned_pages = clean_text_pages(pages, source_type)
-
-    # ---------- CHUNKING ----------
-    if source_type == "spreadsheet":
-        chunks = []
-        for cp in cleaned_pages:
-            chunks.extend(chunk_table_text(cp, chunk_size=settings.CHUNK_SIZE))
-
-    elif source_type == "audio":
-        transcript = "\n\n".join(p for p in cleaned_pages if p)
-        chunks = chunk_audio_transcript(
-            transcript,
-            chunk_chars=settings.AUDIO_CHUNK_CHARS,
-            overlap=settings.AUDIO_CHUNK_OVERLAP
+    # ---- Save chunks (DB) ----
+    for idx, chunk in enumerate(chunks):
+        cur.execute(
+            """
+            INSERT INTO chunks (document_id, chunk_index, chunk_text, source_type)
+            VALUES (?, ?, ?, ?)
+            """,
+            (document_id, idx, chunk, cleaned_blocks[0]["source_type"])
         )
 
-    else:
-        chunks = chunk_text(
-            full_text,
-            chunk_size=settings.CHUNK_SIZE,
-            overlap=settings.CHUNK_OVERLAP
-        )
+    conn.commit()
+    conn.close()
 
-    # ---------- SAVE ----------
-    saved_files = []
-    if settings.SAVE_CHUNKS:
-        prefix = Path(filename).stem
-        saved_files = save_chunks_locally(chunks, prefix=prefix)
+    # ---- Save chunks locally (debug / temp) ----
+    saved_paths = save_chunks_locally(chunks, prefix=Path(filename).stem)
 
     return {
+        "document_id": document_id,
         "filename": filename,
-        "source_type": source_type,
-        "mime": mime,
-        "meta": meta,
-        "num_pages": len(pages),
-        "num_cleaned_pages": len([p for p in cleaned_pages if p]),
+        "file_type": ext,
+        "page_count": page_count,
+        "sheet_count": sheet_count,
+        "language": language,
+        "num_blocks": len(cleaned_blocks),
         "num_chunks": len(chunks),
-        "sample_chunk": chunks[0][:500] if chunks else "",
-        "saved_chunk_files": saved_files[:10],
-        "full_text_length": len(full_text),
+        "sample_chunk": chunks[0][:300] if chunks else "",
+        "saved_chunks": saved_paths[:5],
+        "status": "CHUNKED"
     }

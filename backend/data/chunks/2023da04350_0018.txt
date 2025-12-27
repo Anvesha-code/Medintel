@@ -1,5 +1,5 @@
-naged services, especially Amazon Cognito for authentication, AWS Secrets Manager for credentials, and Aurora PostgreSQL with row-level security, provides a robust and secure foundation for handling sensitive healthcare data.
+There is no single, unified platform where an individual can store and query all their healthcare and insurance information.
 
-Generative AI Capabilities: Amazon Bedrock offers access to powerful foundation models (Titan Embeddings, Claude 3 Sonnet) necessary for generating document embeddings and performing RAG, which is central to the project's core functionality.
+Limited Understanding: The complex language of medical and insurance documents often makes it difficult for individuals to fully understand their coverage, medical history, or financial obligations.
 
-Efficient Information Retrieva
+4. Justification for selecting a particular methodology for completing the tasks: The project adopts a cloud-native, serverless, and Generative AI-driven approach for its im

@@ -1,9 +1,1 @@
-ito, Amazon S3, Amazon DynamoDB, and AWS Amplify.
-
-Recent articles from IEEE Transactions on Medical Informatics, Journal of the American Medical Informatics Association (JAMIA) focusing on AI in healthcare and digital health.
-
-PostgreSQL pgvector extension documentation and GitHub repository.
-
-AWS Well-Architected Framework Documentation to create architecture flow.
-
-Supervisor’s Rating of the Technical Quality of this Dissertation Outline
+e application backend and its integration with a mobile frontend. This includes the complete data flow from document upload to AI-powered query response, encompassing authentication, secure data storage for vector embeddings and conversation history, embedding generation, context retrieval via pgvector, and response generation using Amazon Bedrock's LLMs. The dissertation will focus on demonstrating the technical feasibility, architectural robustness, and core functionalities of the Generative A

@@ -1,11 +1,9 @@
-k
+r manual searching through documents, saving time and reducing frustration.
 
-Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), Cloud Computing (AWS), Mobile Application Development, Data Management, Healthcare Technology, and Personal Information Management.
+Personalized Assistance: Provides tailored answers and insights based on individual health and insurance data.
 
-Objectives
+Secure Data Handling: Ensures the privacy and security of sensitive personal health information through robust AWS security features and multi-tenancy isolation.
 
-The objectives of my project are as follows:
+Scalable Solution: Built on a scalable cloud infrastructure, it can accommodate a large user base and growing data volumes.
 
-To design a scalable, secure, and serverless cloud architecture for a Generative AI-powered mobile application for personalized healthcare and insurance management.
-
-To implement a robust data ingestion pipeline for diverse medical and insurance documents into a centralized storage solution.
+7. Any other details in

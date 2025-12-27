@@ -1,7 +1,5 @@
-izing iterative design, development, and testing. Key phases include:
+eraging AWS managed services, especially Amazon Cognito for authentication, AWS Secrets Manager for credentials, and Aurora PostgreSQL with row-level security, provides a robust and secure foundation for handling sensitive healthcare data.
 
-Requirement Analysis: Detailed understanding of user needs for healthcare information management.
+Generative AI Capabilities: Amazon Bedrock offers access to powerful foundation models (Titan Embeddings, Claude 3 Sonnet) necessary for generating document embeddings and performing RAG, which is central to the project's core functionality.
 
-Architectural Design: Comprehensive design of the cloud-based serverless architecture, specifying AWS services and their interactions (as outlined in the provided diagram).
-
-Backend Development: Implementation of data ingestion pipelines (S3, EventBridge, Lambda), embedding generation using Amazon Bedrock, vector storage in Aurora PostgreSQL with pgvector, and conversation history management in DynamoDB.
+Efficient Inform

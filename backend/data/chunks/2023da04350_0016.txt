@@ -1,7 +1,5 @@
-s of paper or navigating multiple online systems.
+lso a well-established practice in modern software development.
 
-Lack of Centralized Access: There is no single, unified platform where an individual can store and query all their healthcare and insurance information.
+3. Brief discussion on the existing process and its limitations: The existing process for managing personal healthcare and insurance documents is largely manual, fragmented, and inefficient. Individuals typically receive physical documents (e.g., policy papers, medical reports, bills) or access them through various disparate online portals provided by different healthcare providers or insurers. This leads to several limitations:
 
-Limited Understanding: The complex language of medical and insurance documents often makes it difficult for individuals to fully understand their coverage, medical history, or financial obligations.
-
-4. Justification for selecting a particular methodology for completing the tasks: The project adopts a cloud-native, serverless, and Generative AI-driven approach for its implementation.
+D

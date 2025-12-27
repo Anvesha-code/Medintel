@@ -1,9 +1,7 @@
-nce information through natural language queries.
+ntBridge, Lambda), embedding generation using Amazon Bedrock, vector storage in Aurora PostgreSQL with pgvector, and conversation history management in DynamoDB.
 
-Improved Health Management: Empowers individuals to make more informed decisions about their healthcare by providing instant access to relevant data.
+API Development: Creation of secure APIs using Amazon API Gateway and AWS Lambda to facilitate communication between the mobile app and the backend.
 
-Reduced Administrative Burden: Eliminates the need for manual searching through documents, saving time and reducing frustration.
+Frontend Development: Development of the mobile application using AWS Amplify, focusing on an intuitive user interface for voice/text input and displaying AI-generated responses.
 
-Personalized Assistance: Provides tailored answers and insights based on individual health and insurance data.
-
-Secure Data Handling: Ensures the privacy and security o
+RAG Pip

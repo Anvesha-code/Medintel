@@ -1,0 +1,13 @@
+ormatics, Journal of the American Medical Informatics Association (JAMIA) focusing on AI in healthcare and digital health.
+
+PostgreSQL pgvector extension documentation and GitHub repository.
+
+AWS Well-Architected Framework Documentation to create architecture flow.
+
+Supervisor’s Rating of the Technical Quality of this Dissertation Outline
+
+EXCELLENT / GOOD / FAIR/ POOR (Please specify): Excellent
+
+Supervisor’s suggestions and remarks about the outline (if applicable).
+
+Date: 24th May 2025 (Signa

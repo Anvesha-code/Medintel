@@ -1,5 +1,11 @@
-ely retrieves contextual information from user documents and augments prompts for an LLM (anthropic.claude-3-sonnet-20240229-v1:0) to generate relevant answers to natural language queries.
+healthcare. The RAG approach is particularly powerful for ensuring the accuracy and grounding of AI-generated responses in factual user data, mitigating common LLM limitations.
 
-To design and develop a user-friendly mobile application interface for seamless voice and text interaction, integrated with AWS Amplify and Amazon Cognito for authentication.
+Broad Area of Work
 
-To validate the system's performance, accuracy of AI-generated responses, and adherence to security principles for handling sensitive healthcare data.
+Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), Cloud Computing (AWS), Mobile Application Development, Data Management, Healthcare Technology, and Personal Information Management.
+
+Objectives
+
+The objectives of my project are as follows:
+
+To design a scalable, s

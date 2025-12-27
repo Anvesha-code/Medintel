@@ -1,9 +1,7 @@
-icient context retrieval and response generation.
+le development methodology, emphasizing iterative design, development, and testing. Key phases include:
 
-Testing and Validation: Rigorous testing of individual components, end-to-end functionality, security, and performance.
+Requirement Analysis: Detailed understanding of user needs for healthcare information management.
 
-Deployment and Monitoring: Deployment of the solution and setting up monitoring for performance and operational health.
+Architectural Design: Comprehensive design of the cloud-based serverless architecture, specifying AWS services and their interactions (as outlined in the provided diagram).
 
-6. Benefits derivable from the work: HealthAssist offers significant benefits:
-
-Enhanced Information Accessibility: Users can quickly and easily access critical healthcare and insurance information through natural language queries.
+Backend Development: Implementation of data ingestion pipelines (S3, EventBridge, Lambda), embedding generation using Amaz
