@@ -34,7 +34,7 @@ easyocr # alternative OCR engine
 pip>=23.1
 setuptools>=65
 wheel
-
+sqlalchemy
 
 
 

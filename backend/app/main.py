@@ -4,7 +4,7 @@ from app.api.routes_upload import router as upload_router
 from app.api.routes_chat import router as chat_router
 from app.api.routes_health import router as health_router
 from app.api.routes_documents import router as documents_router
-
+from app.db.init_db import init_db
 
 app = FastAPI(title="Medintel API",version="0.1.0")
 # CORS settings -
@@ -30,6 +30,9 @@ app.include_router(chat_router, prefix="/chat")
 app.include_router(documents_router)
 app.include_router(health_router)
 
+@app.on_event("startup")
+def on_startup():
+    init_db()
 
 @app.get("/")
 async def root():
