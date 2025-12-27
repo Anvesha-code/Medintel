@@ -1,18 +1,28 @@
 from pydantic import BaseSettings
 
 class Settings(BaseSettings):
-    app_name: str
-    env: str
-    log_level: str
+    # App
+    APP_NAME: str = "MedIntel"
+    ENV: str = "local"
 
-    database_url: str
-    qdrant_url: str
+    # Upload
+    MAX_UPLOAD_MB: int = 20
+    MAX_MEM_READ: int = 20 * 1024 * 1024
 
-    chunk_size: int
-    chunk_overlap: int
-    top_k: int
+    # Chunking
+    CHUNK_SIZE: int = 500
+    CHUNK_OVERLAP: int = 50
 
-    max_upload_mb: int
+    # Audio
+    ENABLE_AUDIO: bool = False
+    AUDIO_CHUNK_CHARS: int = 1500
+    AUDIO_CHUNK_OVERLAP: int = 100
+    WHISPER_MODEL: str = "small"
+
+    # Vector DB
+    QDRANT_HOST: str = "localhost"
+    QDRANT_PORT: int = 6333
+    QDRANT_COLLECTION: str = "medintel_vectors"
 
     class Config:
         env_file = ".env"

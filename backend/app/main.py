@@ -10,12 +10,7 @@ app = FastAPI(title="Medintel API",version="0.1.0")
 # CORS settings -
 origins = [
     "http://localhost:8501",      # Streamlit default
-    "http://127.0.0.1:8501",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
-    "*"                           # during development – we can restrict later
+    "http://127.0.0.1:8501"                      # during development – we can restrict later
 ]
 
 app.add_middleware(
