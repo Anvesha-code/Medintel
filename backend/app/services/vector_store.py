@@ -1,6 +1,8 @@
 from typing import List, Dict
 from uuid import uuid4
 from qdrant_client.models import PointStruct
+from qdrant_client.models import Filter, FieldCondition, MatchValue
+
 from app.db.qdrant_connection import (
     get_qdrant_client,
     COLLECTION_NAME
@@ -12,15 +14,12 @@ class VectorStore:
     Handles all interactions with Qdrant:
     - Storing vectors
     - Searching vectors
-
-    Qdrant is used in SERVER MODE.
     """
 
     def __init__(self):
         self.client = get_qdrant_client()
         self.collection_name = COLLECTION_NAME
 
-        # Debug: confirm available server search methods
         print(
             "QDRANT SEARCH METHODS:",
             [m for m in dir(self.client) if "search" in m]
@@ -29,43 +28,26 @@ class VectorStore:
     # --------------------------------------------------
     # STORE VECTORS
     # --------------------------------------------------
-    def store(self, records: list):
-        """
-        records = [
-            {
-                "embedding": [...],
-                "metadata": {
-                    "doc_id": int,
-                    "chunk_index": int,
-                    "text": str,
-                    "source_type": str,
-                    "filename": str
-                }
-            }
-        ]
-        """
-
+    def store(self, records: List[Dict]):
         if not records:
             return
 
         points = []
 
         for record in records:
-            embedding = record["embedding"]
             metadata = record["metadata"]
 
             point = PointStruct(
                 id=str(uuid4()),
-                vector=embedding,
+                vector=record["embedding"],
                 payload={
+                    "user_id": metadata["user_id"],
                     "doc_id": metadata["doc_id"],
                     "chunk_index": metadata["chunk_index"],
                     "text": metadata["text"],
-                    "source_type": metadata.get("source_type"),
-                    "filename": metadata.get("filename"),
+                    "source_type": metadata["source_type"]
                 }
             )
-
             points.append(point)
 
         self.client.upsert(
@@ -76,30 +58,45 @@ class VectorStore:
         print(f"✅ Stored {len(points)} vectors in Qdrant")
 
     # --------------------------------------------------
-    # SEARCH VECTORS (QDRANT SERVER MODE)
+    # SEARCH VECTORS (SAFE DAY-9 VERSION)
     # --------------------------------------------------
+    def search(
+        self,
+        query_embedding,
+        user_id: str,
+        source_type: str | None = None,
+        top_k: int = 5
+    ):
+        print("🔍 SEARCH CALLED")
+        print("   user_id:", user_id)
+        print("   source_type:", source_type)
+        print("   top_k:", top_k)
 
-    # ✅ SEARCH MUST BE INSIDE CLASS
+        # always filter by user
+        must_conditions = [
+            FieldCondition(
+                key="user_id",
+                match=MatchValue(value=user_id)
+            )
+        ]
 
-    def search(self, query_embedding, top_k=5):
-        print("🔍 Calling Qdrant search (RAG SAFE)")
+        # filter by source_type ONLY if provided
+        if source_type:
+            must_conditions.append(
+                FieldCondition(
+                    key="source_type",
+                    match=MatchValue(value=source_type)
+                )
+            )
+
+        search_filter = Filter(must=must_conditions)
 
         results = self.client.search(
             collection_name=self.collection_name,
             query_vector=query_embedding,
             limit=top_k,
-            with_payload=True
+            #query_filter=search_filter
         )
 
-        matches = []
-        for point in results:
-            matches.append({
-                "id": point.id,
-                "score": point.score,
-                "text": point.payload.get("text"),
-                "filename": point.payload.get("filename"),
-                "chunk_index": point.payload.get("chunk_index"),
-                "doc_id": point.payload.get("doc_id")
-            })
-
-        return matches
+        print("🧲 QDRANT RESULTS:", len(results))
+        return results
