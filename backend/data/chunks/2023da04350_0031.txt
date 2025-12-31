@@ -1,9 +1,0 @@
-queries.
-
-To design and develop a user-friendly mobile application interface for seamless voice and text interaction, integrated with AWS Amplify and Amazon Cognito for authentication.
-
-To validate the system's performance, accuracy of AI-generated responses, and adherence to security principles for handling sensitive healthcare data.
-
-Scope of Work
-
-Scope of this dissertation is to design and develop a proof-of-concept for the HealthAssist mobile application backend and its integration with a m

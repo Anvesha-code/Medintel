@@ -1,2 +1,0 @@
-Tab=Runbooks, Field=Tested Date/Time, Description=Use this field to record when this runbook was last tested., Notes (if applicable)=nan
-Tab=Runbooks, Field=Tested By, Description=Use this field to record who last tested this runbook., Notes (if applicable)=nan

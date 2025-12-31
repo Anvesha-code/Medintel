@@ -1,0 +1,19 @@
+Experience working with Large Language Models (OpenAI, LLaMA, Claude, Gemini, etc.).
+
+Strong understanding of Prompt Engineering and RAG architectures.
+
+Experience with vector databases (FAISS, Pinecone, Weaviate, Chroma).
+
+Familiarity with LangChain / LlamaIndex.
+
+MLOps & Cloud
+
+Experience deploying ML models on AWS / Azure / GCP.
+
+Hands-on experience with Docker, Kubernetes, CI/CD.
+
+Knowledge of model monitoring, drift detection, and retraining strategies.
+
+Good to Have
+
+Experience with Spar

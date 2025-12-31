@@ -1,0 +1,11 @@
+3 
+ 
+ 
+ ABSTRACT 
+ 
+Healthcare records generated across an individual’s lifetime are commonly dispersed across 
+multiple platforms and stored in heterogeneous formats, creating significant challenges in 
+organizing, accessing, and understanding medical information. Clinical reports, prescriptions, 
+laboratory results, insurance records, diagnostic images, spreadsheets, and audio notes are often 
+maintained in isolation, preventing individuals from forming a complete and coherent view of 
+their h

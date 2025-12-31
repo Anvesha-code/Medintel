@@ -1,2 +1,0 @@
-This may be the global default for execution and can be found on the Runbook Server tab in the properties of the runbook., Notes (if applicable)=nan
-Tab=Runbooks, Field=Date Created, Description=Use this field to record the date the runbook was initially created., Notes (if applicable)=nan

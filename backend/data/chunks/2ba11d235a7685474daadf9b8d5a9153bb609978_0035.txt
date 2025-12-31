@@ -1,0 +1,10 @@
+orced across both 
+relational and vector storage layers, ensuring that personal medical information remains securely 
+separated in multi-user environments. This design emphasizes privacy, explainability, and 
+scalability, establishing MedIntel as a privacy-conscious and future-ready solution for AI-driven 
+healthcare data management. 
+ 
+Chapter 2: Literature Review Progress 
+ 
+2.1 Current State of Healthcare Data Management 
+An analysis of existing research and industry practices reveals that he

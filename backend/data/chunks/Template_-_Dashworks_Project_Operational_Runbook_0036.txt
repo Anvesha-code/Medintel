@@ -1,9 +1,0 @@
-named Applications
-
-<INSERT SCREENSHOT OF THE APPLICATIONS TAB ON THE DEPLOYMENT DASHBOARD DETAIL VIEW>
-
-From here you can view a full list of applications, their current readiness status, AD group name and predicted (or actual) delivery date.
-
-11.2. Smoothing the Forecast Plan
-
-He forecast plan will need to be realistic and achievable. This means that the forecast must not exceed engineer capacity, and that the forecast dates fall within the correct deployment windows. Also, the applications list and required by dates must be reasonable, and agreed with the application packaging team.

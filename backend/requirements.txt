@@ -36,6 +36,11 @@ setuptools>=65
 wheel
 sqlalchemy
 pydantic-settings
+sentence-transformers
+torch
+numpy
+qdrant-client==1.9.1
+langid
 
 
 

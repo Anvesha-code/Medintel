@@ -1,5 +1,0 @@
-of experimental thesaurus research, 14(1), 3-22. 7. Lin, C.-Y. (2004). Rouge: A package for automatic evaluation of summaries. In Proceedings of the workshop on automatic summarization in conjunction with the main conference (pp. 108-115).
-Page 38 of 41 - Integrity Submission
-Page 38 of 41 - Integrity Submission
-
-34 Appendices Appendix A: Technical Documentation and Specifications The technical implementation of HealthAssist relies on a sophisticated integration of various AWS services and tech

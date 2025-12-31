@@ -1,0 +1,4 @@
+mbines semantic retrieval with generative modeling by first identifying 
+relevant document segments from a user’s data and then using this retrieved context to guide 
+response generation. By grounding model outputs in actual medical documents, RAG 
+significantly improves reliability and contextual relevance. These advancements form the

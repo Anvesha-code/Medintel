@@ -1,0 +1,7 @@
+solation. 
+In the context of MedIntel, vector databases play a critical role in supporting semantic access to 
+lifelong medical records. By storing embeddings of processed document chunks along with 
+metadata such as document identifiers, source types, and timestamps, the system enables 
+accurate and context-aware retrieval across diverse document formats and time spans. The 
+findings from existing research reinforce the suitability of vector database–driven architectures 
+for healthcare applica

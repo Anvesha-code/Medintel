@@ -1,0 +1,36 @@
+thon Packages and Frameworks
+Pandas
+scikit-learn
+Numpy
+Matplotlib
+Seaborn
+Tensorﬂow
+• Databases and Cloud
+SQL
+Aws
+Postgresql
+Mongodb
+SageMaker
+AWS Glue
+AWS Lambda
+S3
+AWS Athena
+TerraForm
+• RELEVANT COURSES
+Math Foundation for ML
+Statistical Methods
+NLP
+AI
+DNN
+ML
+DRL
+MlOps
+Advance DL
+ML System Optimization
+Con AI
+INDUSTRIAL PROJECT
+Cognizant- Data Scientist
+AI-Driven API Script Generation Platform
+ March 25 -till now
+½ Gurugram, India
+Designed and developed a self-service AI platform to automati

@@ -1,0 +1,7 @@
+ed to manage, 
+store, and retrieve personal healthcare documents accumulated across an individual’s lifetime. In 
+real-world healthcare settings, medical information is generated continuously in the form of 
+laboratory reports, prescriptions, discharge summaries, insurance documents, diagnostic images, 
+spreadsheets, and clinical notes. These records are often scattered across hospitals, clinics, 
+personal devices, and digital portals, resulting in fragmented and poorly organized medical 
+histor

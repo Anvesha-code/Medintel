@@ -1,0 +1,21 @@
+ng strategies.
+
+Good to Have
+
+Experience with Spark / PySpark for large-scale data processing.
+
+Knowledge of data pipelines and orchestration tools (Airflow, Prefect).
+
+Experience in search, recommendation, or conversational AI systems.
+
+Exposure to regulated or enterprise environments.
+
+Soft Skills
+
+Strong problem-solving and analytical skills.
+
+Excellent communication and stakeholder management.
+
+Ability to balance hands-on coding with technical leadership.
+
+Passion for mentoring and building

@@ -1,2 +1,0 @@
-Tab=Runbooks, Field=Failed Result:, Description=Use this field to identify what action/data/information to expect to see if the runbook fails to run successfully., Notes (if applicable)=nan
-Tab=Runbooks, Field=From Email Address:, Description=Use this field to identify the email address used in the runbook to send email if there is an email action in the runbook., Notes (if applicable)=nan

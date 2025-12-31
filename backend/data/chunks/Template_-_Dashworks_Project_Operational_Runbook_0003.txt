@@ -1,5 +1,0 @@
-Insert Additional Data Sources>. The Dashworks application is used to track the migration readiness of end users, ensuring that all key project dependencies are met before an end user is scheduled for migration.
-
-Scope
-
-The purpose of this runbook is to provide operational documentation for the <Customer Name> Dashworks application. It will facilitate the management and utilisation of the application in the most efficient manner possible, and thereby maximize the value of the application to <Customer Name>.

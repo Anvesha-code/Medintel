@@ -1,0 +1,9 @@
+sizes, embedding strategies, and similarity search 
+configurations to maintain efficient response times. 
+2. Document Format Handling 
+Supporting multiple document formats introduced inconsistencies in text extraction 
+quality. Additional preprocessing steps were required to normalize extracted content 
+before embedding. 
+3. System Integration Complexity 
+Integrating the ingestion pipeline, vector database, and language model into a single 
+retrieval workflow required careful handling of data f

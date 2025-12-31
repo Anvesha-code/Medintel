@@ -1,3 +1,0 @@
-ommitment to data privacy and security, achieved through row-level security in Aurora PostgreSQL, ensuring strict isolation of tenant embeddings in multi-tenancy workloads. This prevents any unauthorized access to another user's sensitive healthcare information. Furthermore, Amazon DynamoDB is employed to manage and store comprehensive conversation histories, enabling a seamless and continuous user experience.
-
-The core intelligence of HealthAssist is powered by Amazon Bedrock, which facilitates

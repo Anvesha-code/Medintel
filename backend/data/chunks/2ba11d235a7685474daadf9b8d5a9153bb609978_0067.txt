@@ -1,0 +1,20 @@
+and 
+similarity search 
+Sentence Transformer 
+Models 
+Text embeddings 
+Completed Used for vector generation 
+LLM API (OpenAI / 
+similar) 
+Response 
+generation 
+In 
+Progress 
+Integrated for question 
+answering 
+ 
+4.3 Challenges Encountered 
+Several challenges were identified during the implementation of MedIntel: 
+1. Vector Search Performance 
+Storing and querying high-dimensional embeddings for large documents required 
+experimentation with chunk sizes, embedding strategies, and similarity searc

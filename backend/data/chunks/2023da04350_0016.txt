@@ -1,5 +1,0 @@
-lso a well-established practice in modern software development.
-
-3. Brief discussion on the existing process and its limitations: The existing process for managing personal healthcare and insurance documents is largely manual, fragmented, and inefficient. Individuals typically receive physical documents (e.g., policy papers, medical reports, bills) or access them through various disparate online portals provided by different healthcare providers or insurers. This leads to several limitations:
-
-D

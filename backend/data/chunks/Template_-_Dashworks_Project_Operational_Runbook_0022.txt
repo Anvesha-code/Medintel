@@ -1,9 +1,0 @@
-type from VDI (if applicable for laptop users)
-
-Request Types
-
-Request types are used in Dashworks to designate the type of migration path for the user. They should also be used to identify the different application paths (MSI, Vitrual / Manual Install).
-
-The request type for a user is held on the Details tab for that user object. By default it is configured for <Default User Request Type> when the user is onboarded, and <Default Application Request Type> when an application is onboarded.
-
-If yo

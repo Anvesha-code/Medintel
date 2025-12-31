@@ -1,9 +1,0 @@
-r manual searching through documents, saving time and reducing frustration.
-
-Personalized Assistance: Provides tailored answers and insights based on individual health and insurance data.
-
-Secure Data Handling: Ensures the privacy and security of sensitive personal health information through robust AWS security features and multi-tenancy isolation.
-
-Scalable Solution: Built on a scalable cloud infrastructure, it can accommodate a large user base and growing data volumes.
-
-7. Any other details in

@@ -1,0 +1,8 @@
+15 
+Vector Search Performance 
+Efficiently managing high-dimensional embeddings for large healthcare documents posed a 
+performance challenge. As document size and volume increased, maintaining fast and accurate 
+similarity search results required careful tuning of vector storage and retrieval strategies. 
+Data Isolation and Access Control 
+Ensuring secure and isolated access to user data within the system required additional design 
+considerations. Preventing unintended data exposure between di

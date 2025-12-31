@@ -1,0 +1,6 @@
+thods when applied to medical documents, especially in scenarios involving 
+complex clinical language and synonymous expressions. Vector databases enable scalable and 
+efficient similarity search across large collections of unstructured healthcare data, making them a 
+core component of modern RAG architectures. Their ability to associate embeddings with rich 
+metadata further supports filtered retrieval, temporal organization, and user-specific isolation. 
+In the context of MedIntel, vector data

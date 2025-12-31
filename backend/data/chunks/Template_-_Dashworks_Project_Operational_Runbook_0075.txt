@@ -1,5 +1,0 @@
-ashboard, you can click on All Applications to get a complete list of every application, or you can click on the counts per colour to see only applications in a certain status of readiness.
-
-15.6. Viewing Application Readiness Colours for User Groups
-
-User based group application readiness can be viewedby using the Application (Group) dashboard. This page shows a count of distinct applications per user group and the readiness of those applications from the Application Packaging Workflow Tracking System.

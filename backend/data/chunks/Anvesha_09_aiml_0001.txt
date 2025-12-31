@@ -1,0 +1,5 @@
+ANVESHA SONKER
+Cognizant Technology Solutions Corporation
+Highly skilled GenAI/LLM Engineer with 5+ years of experience, building intelligent document-understanding systems using Python, SQL, and modern AI
+frameworks. Experienced in designing end-to-end Retrieval-Augmented Generation RAG pipelines Proﬁcient in data extraction, preprocessing, chunking,
+embedding generation, and vector-based semantic retrieval using FastAPI-based microservices. Strong expertise in LLM integration, prompt engineeri

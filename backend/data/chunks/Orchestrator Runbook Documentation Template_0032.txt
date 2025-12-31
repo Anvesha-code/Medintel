@@ -1,1 +1,0 @@
-Tab=Runbooks, Field=Category(Parent/Main Folder):, Description=Use this field to describe the main function the runbook relates to - it could be a common function that is used by many runbooks, or it could be a more specific function like Onboarding or Service Desk Ticket creation., Notes (if applicable)=nan

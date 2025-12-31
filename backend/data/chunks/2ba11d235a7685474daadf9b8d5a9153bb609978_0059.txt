@@ -1,0 +1,2 @@
+dings capture the underlying meaning of medical text and 
+are stored within the vector database alongside relevant metadata. When a user submits a query,

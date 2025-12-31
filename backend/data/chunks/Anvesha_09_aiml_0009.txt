@@ -1,0 +1,8 @@
+nd ﬁxing defects as per their
+priority.
+• Developed and maintained database solutions, ensuring eﬃcient data
+storage and retrieval.
+• Wrote and optimized SQL queries, stored procedures, and triggers
+for various business applications.
+• Transform and manipulate data using SQL as per business
+requirements and delivered complex business reports

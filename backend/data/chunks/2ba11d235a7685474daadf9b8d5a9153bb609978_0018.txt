@@ -1,0 +1,6 @@
+ates document upload, preview, and conversational querying through a user-friendly 
+interface. By integrating lifelong data retention with explainable, source-grounded AI responses, 
+MedIntel converts fragmented healthcare records into a unified and continuously evolving 
+personal health knowledge base. The system aims to reduce administrative overhead, improve 
+medical data comprehension, and support informed decision-making, highlighting the practical 
+role of Generative AI in long-term health

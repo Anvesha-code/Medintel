@@ -1,0 +1,7 @@
+iverse user groups. 
+LITERATURE REFERENCES 
+The following journals, research papers, and technical resources were referred to during the 
+literature review and development of the MedIntel system: 
+ 
+Lewis, P., Perez, E., Piktus, A., et al. 
+Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.

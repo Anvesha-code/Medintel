@@ -1,5 +1,0 @@
-There is no single, unified platform where an individual can store and query all their healthcare and insurance information.
-
-Limited Understanding: The complex language of medical and insurance documents often makes it difficult for individuals to fully understand their coverage, medical history, or financial obligations.
-
-4. Justification for selecting a particular methodology for completing the tasks: The project adopts a cloud-native, serverless, and Generative AI-driven approach for its im

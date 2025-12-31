@@ -1,7 +1,0 @@
-SERT SCREENSHOT OF SELF-SERVICE APPLICATIONS PAGE>
-
-By clicking on Save & Continue, these choices are saved back into the Dashworks user object page, and will reflect the new applications list if any applications have been removed (shown in the current state application list as Sticky Exclude).
-
-12.5.4. Step 4 – Additional Questions
-
-The user is now presented with some additional questions that are specific to the project. The information gathered in the answers will trigger additional colour statuses where further action is now required.

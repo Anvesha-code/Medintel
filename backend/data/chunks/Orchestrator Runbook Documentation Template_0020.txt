@@ -1,1 +1,0 @@
-EndDate, Outputs (Return Data):=Record Count, Success Result(s):=Record Count is set to a positive integer value, Failed Result(s):=Email to IT@company.com, From Email Address:=orch@company.com, To Email Address:=IT@company.com

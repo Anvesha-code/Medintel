@@ -1,0 +1,7 @@
+m forming a complete and coherent view of 
+their health history. MedIntel is proposed as a Generative AI–driven medical document 
+intelligence system that enables intuitive, natural language interaction with long-term personal 
+healthcare data. 
+MedIntel is architected as a persistent medical knowledge repository that incrementally 
+collects and semantically organizes healthcare documents over time. The system supports a wide 
+range of document formats and employs a Retrieval-Augmented Generatio

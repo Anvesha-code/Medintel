@@ -1,0 +1,7 @@
+s, or long-term health 
+monitoring. 
+The literature further indicates that existing consumer-oriented healthcare applications primarily 
+focus on basic document storage or static viewing capabilities. Advanced functionalities such as 
+semantic understanding, cross-document reasoning, and natural language querying of personal 
+medical records are largely absent. Keyword-based search mechanisms commonly used in these 
+systems fail to capture the contextual and semantic relationships inherent in me

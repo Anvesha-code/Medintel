@@ -1,0 +1,7 @@
+ding document 
+ingestion, preprocessing, vector-based retrieval, and response generation—into a unified 
+workflow. Special emphasis was placed on modularity and scalability, ensuring that each 
+component can be independently extended or replaced as the system evolves. 
+Best practices for modern application design were adopted, such as separation of concerns, 
+service-based components, and asynchronous processing where applicable. The architectural 
+design has been validated through initial proto

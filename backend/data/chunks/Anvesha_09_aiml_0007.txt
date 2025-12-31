@@ -1,0 +1,9 @@
+rediction Model for Business Forecasting:Built a patient volume
+prediction model that improved resource allocation and increased
+eﬃciency and revenue by 20%.
+• Preprocessing for Enhanced Model Accuracy: Implemented
+advanced data preprocessing and class imbalance techniques
+(SMOTE, class weighting), improving model accuracy and driving a
+20% increase in company performance through more reliable insights
+• Training Optimization for Improved Results:Optimized CNN,
+Random Forest, SVM, and Gradient B

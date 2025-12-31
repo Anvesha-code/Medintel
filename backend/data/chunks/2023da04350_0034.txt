@@ -1,7 +1,0 @@
-resources from the preliminary literature review:
-
-Lewis, P: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. Advances in Neural Information Processing Systems,
-
-Amazon Web Services (AWS) Documentation: Specifically documentation for Amazon Bedrock, Amazon Aurora PostgreSQL, pgvector, AWS Lambda, Amazon API Gateway, Amazon Cognito, Amazon S3, Amazon DynamoDB, and AWS Amplify.
-
-Recent articles from IEEE Transactions on Medical Informatics, Journal of the American Medical Informat

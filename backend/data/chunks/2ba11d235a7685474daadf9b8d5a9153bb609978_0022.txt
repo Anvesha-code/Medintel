@@ -1,0 +1,6 @@
+in fragmented and poorly organized medical 
+histories. Such fragmentation makes it difficult for individuals to access relevant information 
+when required, track long-term health trends, or make informed healthcare decisions. MedIntel 
+addresses this challenge by providing a unified, persistent repository that incrementally stores 
+and organizes medical documents over time, enabling longitudinal access to an individual’s 
+complete healthcare history through a single intelligent interface.

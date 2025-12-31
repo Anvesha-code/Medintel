@@ -1,0 +1,6 @@
+2 Data Storage and Security Design 
+MedIntel implements a multi-layered data storage strategy designed to support persistent, 
+long-term retention of medical records while ensuring user-level data isolation. Raw documents, 
+extracted text, and processed artifacts are stored persistently, allowing the system to accumulate 
+healthcare information incrementally over time. A relational database is used to maintain 
+structured metadata, including document identifiers, timestamps, document categories,

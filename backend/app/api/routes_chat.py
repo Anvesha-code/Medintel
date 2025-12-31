@@ -3,6 +3,7 @@ import asyncio
 from fastapi import APIRouter, Query, HTTPException
 from app.services.rag_pipeline import RAGPipeline
 
+
 router = APIRouter(prefix="/chat", tags=["chat"])
 rag = RAGPipeline()
 
@@ -16,7 +17,7 @@ async def ask(question: str = Query(..., min_length=1)):
         # call blocking/search operation in a thread
         results = await asyncio.wait_for(
             asyncio.to_thread(rag.search, question, 5),
-            timeout=60
+            timeout=300
         )
         return {"answer_chunks": results}
     except asyncio.TimeoutError:
@@ -24,3 +25,6 @@ async def ask(question: str = Query(..., min_length=1)):
     except Exception as e:
         # generic server error
         raise HTTPException(status_code=500, detail=str(e))
+
+
+

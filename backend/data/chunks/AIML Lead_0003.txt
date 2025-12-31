@@ -1,0 +1,15 @@
+ality, performance, and scalability.
+
+Establish best practices for model evaluation, monitoring, and retraining.
+
+Hands-on Development
+
+Build and fine-tune transformer models (BERT, RoBERTa, GPT, T5, etc.) using PyTorch or TensorFlow.
+
+Develop APIs and microservices for model inference using FastAPI / Flask.
+
+Implement Retrieval-Augmented Generation (RAG) pipelines using vector databases.
+
+Optimize models for latency, cost, and performance in production environments.
+
+Work with structured and un

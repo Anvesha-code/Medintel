@@ -1,0 +1,11 @@
+grated Azure OpenAI (LLM APIs) to dynamically generate
+framework-compliant API scripts using prompt engineering, templates,
+and response validation logic.
+Developed a node-based execution pipeline with guardrails for input
+validation, prompt validation, code safety checks, and framework
+compliance.
+Tech Health-Care - Data Scientist -Python
+Solves a critical problem in the healthcare domain of Data science
+ Jan 2023 - March 2025
+½ Pune, India
+• Prediction Model for Business Forecasting:Built a p

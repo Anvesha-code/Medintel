@@ -1,0 +1,4 @@
+ate of Healthcare Data Management ............................................................................... 7 
+2.2 Advances in Natural Language Processing for Healthcare ............................................................... 8 
+2.3 Vector Databases in Healthcare Applications ................................................................................ 9 
+Chapter 3: System Architecture and Design ...................................................................................

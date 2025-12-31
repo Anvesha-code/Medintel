@@ -1,9 +1,0 @@
-y project are as follows:
-
-To design a scalable, secure, and serverless cloud architecture for a Generative AI-powered mobile application for personalized healthcare and insurance management.
-
-To implement a robust data ingestion pipeline for diverse medical and insurance documents into a centralized storage solution.
-
-To leverage Amazon Bedrock's foundation models (amazon.titan-embed-text-v2:0) for generating high-dimensional vector embeddings from user documents.
-
-To establish a secure and eff

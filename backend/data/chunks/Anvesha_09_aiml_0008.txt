@@ -1,0 +1,13 @@
+:Optimized CNN,
+Random Forest, SVM, and Gradient Boosting models using
+hyperparameter tuning, early stopping, and learning rate scheduling.
+Improved search relevance and information retrieval, increasing user
+engagement by 10%
+Tech Data store - Software Developer-Python
+Solves a critical problem in the Tech Data
+ sept 2020 -july 2024
+½ Pune, India
+• Responsible for maintenance of applications, manage the defect
+process for designed application and ﬁxing defects as per their
+priority.
+• Develope

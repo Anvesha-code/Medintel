@@ -1,0 +1,19 @@
+ata and storage layer to 
+support longitudinal organization of healthcare data 
+Completed 75% 
+5 
+Integrate semantic embedding generation for medical 
+text using sentence-transformer models 
+In 
+Progress 
+60% 
+6 
+Implement a Retrieval-Augmented Generation (RAG) 
+pipeline for context-aware medical information retrieval 
+Planned 
+10% 
+7 
+Develop a user-facing frontend and enforce secure, 
+user-isolated access 
+Planned 
+0%

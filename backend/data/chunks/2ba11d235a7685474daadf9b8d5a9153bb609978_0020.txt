@@ -1,0 +1,28 @@
+4 
+List of Symbols & Abbreviations 
+ 
+Abbreviation 
+Description 
+AI 
+Artificial Intelligence 
+API 
+Application Programming Interface 
+NLP 
+Natural Language Processing 
+LLM 
+Large Language Model 
+RAG 
+Retrieval-Augmented Generation 
+OCR 
+Optical Character Recognition 
+DB 
+Database 
+UI 
+User Interface 
+ 
+ 
+CHAPTER 1: INTRODUCTION AND OBJECTIVES 
+ 
+1.1 Project Overview 
+MedIntel is a Generative AI–driven medical document intelligence platform designed to manage, 
+store, and retrieve personal health

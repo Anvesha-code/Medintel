@@ -1,4 +1,0 @@
-grity Submission
-Page 16 of 41 - Integrity Submission
-
-12 Chapter 1: Introduction and Objectives 1.1 Project Overview HealthAssist represents a paradigm shift in personal healthcare data management by leveraging cutting-edge Generative AI technologies to create an intelligent, conversational interface for healthcare document management. The project addresses the critical challenge of healthcare document fragmentation, where individuals struggle to maintain organized, accessible records of their medical history, insurance policies, and related documentation.

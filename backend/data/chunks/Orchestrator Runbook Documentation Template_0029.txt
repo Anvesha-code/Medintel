@@ -1,2 +1,0 @@
-Tab=Runbooks, Field=Created By, Description=Use this field to record the original creator of the runbook., Notes (if applicable)=nan
-Tab=Runbooks, Field=Date Last Modified, Description=Use this field to record the date the runbook was last modified., Notes (if applicable)=nan

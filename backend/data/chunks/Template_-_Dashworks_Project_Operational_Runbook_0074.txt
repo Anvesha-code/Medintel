@@ -1,9 +1,0 @@
-S AS THEY RELATE TO DASHWORKS INTERFACING>
-
-15.5. Viewing Application Readiness Colours for All Applications
-
-Application readiness can be viewed in aggregate by using the Application (All) dashboard. This page shows a count of every application still in scope for the project, and it’s current readiness status according to the Application Packaging Workflow Tracking System.
-
-<INSERT SCREENSHOT OF APPLICATIONS ALL DASHBOARD TOP LEVEL>
-
-From this dashboard, you can click on All Applications to get

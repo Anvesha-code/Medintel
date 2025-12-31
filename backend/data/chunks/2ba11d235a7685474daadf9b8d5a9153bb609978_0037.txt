@@ -1,0 +1,4 @@
+ir 
+medical information over time. 
+Although Electronic Health Record (EHR) systems provide structured storage of clinical data, 
+access for individuals is often fragmented, restricted, or distributed across multiple provider

@@ -1,0 +1,8 @@
+5 
+ 
+The core innovation of MedIntel lies in its Retrieval-Augmented Generation (RAG) 
+architecture, which enables natural language interaction with medical documents while ensuring 
+that system responses remain grounded in factual, user-specific data. Instead of relying solely on 
+a large language model’s internal knowledge, MedIntel first retrieves semantically relevant 
+content from the user’s stored medical documents using vector-based similarity search. These 
+retrieved document segments ar

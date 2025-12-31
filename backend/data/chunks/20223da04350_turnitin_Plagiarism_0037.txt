@@ -1,8 +1,0 @@
-ounding responses in factual, user-specific data.
-8
-12
-25
-Page 20 of 41 - Integrity Submission
-Page 20 of 41 - Integrity Submission
-
-16 2.3 Vector Databases in Healthcare Applications Research into vector databases and their extensions, particularly pgvector for PostgreSQL, has demonstrated their efficacy in performing efficient similarity searches crucial for RAG architectures. The literature indicates that vector databases are becoming increasingly important for healthcare applications that require semantic search capabilities across large document collections.

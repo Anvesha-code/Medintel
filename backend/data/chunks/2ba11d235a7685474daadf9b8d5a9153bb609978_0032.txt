@@ -1,0 +1,7 @@
+g organized and accessible medical histories becomes 
+increasingly difficult. MedIntel responds to this challenge by providing a unified, AI-driven 
+platform that enables users to store, organize, and retrieve their healthcare information through 
+intuitive natural language interaction. 
+From a technological perspective, MedIntel demonstrates the effective application of Retrieval-
+Augmented Generation (RAG) architectures in a healthcare context. Rather than relying solely 
+on generative models,

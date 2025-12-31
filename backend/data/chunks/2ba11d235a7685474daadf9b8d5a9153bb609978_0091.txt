@@ -1,0 +1,16 @@
+-
+assisted healthcare systems. 
+ 
+PostgreSQL pgvector Documentation and GitHub Repository 
+(Referenced for vector storage, similarity search, and performance optimization.) 
+ 
+Qdrant Vector Database Documentation 
+(Used for understanding open-source vector database design and semantic search 
+workflows.) 
+ 
+FastAPI Official Documentation 
+(Referenced for backend API design, asynchronous request handling, and system 
+integration.) 
+ 
+OpenAI / LLM API Technical Documentation 
+(Used for underst

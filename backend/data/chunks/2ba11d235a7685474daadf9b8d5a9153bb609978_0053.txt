@@ -1,0 +1,10 @@
+10 
+maintainability and enables incremental system evolution as new features or data types are 
+introduced. 
+At a high level, MedIntel consists of a backend API layer, a document processing pipeline, a 
+semantic retrieval layer, persistent storage components, and a user-facing interface. These 
+components work together to enable seamless ingestion of medical documents and natural 
+language interaction with lifelong personal healthcare data. 
+ 
+3.2 Data Storage and Security Design 
+MedIntel imple

@@ -1,0 +1,6 @@
+ntextual and semantic relationships inherent in medical data, 
+limiting their usefulness for complex or longitudinal health-related queries. 
+These limitations highlight a significant gap between the growing volume of personal healthcare 
+data and the tools available for managing it effectively. The findings underscore the need for 
+intelligent, user-centric systems like MedIntel, which aim to support lifelong accumulation of 
+medical documents and enable meaningful interaction through AI-driven

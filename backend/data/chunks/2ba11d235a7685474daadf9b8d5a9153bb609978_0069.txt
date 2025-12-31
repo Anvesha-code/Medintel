@@ -1,0 +1,5 @@
+ieval workflow required careful handling of data flow, error cases, and response 
+latency. 
+Addressing these challenges has improved the robustness of the MedIntel backend and laid a 
+strong foundation for implementing the full Retrieval-Augmented Generation pipeline in 
+subsequent phases.

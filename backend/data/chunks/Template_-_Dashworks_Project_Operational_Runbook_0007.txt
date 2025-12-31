@@ -1,5 +1,0 @@
-s application is the <Project Name> project team. The database runs on SQL 2008. The application resides on a separate server at and uses IIS for end user access. Both servers reside at the <Data Centre Name>. Users access the front end of Dashworks through a web browser on this address; <Dashworks URL>.
-
-The Dashworks system builds its data warehouse by pulling data in from numerous different database repositories. These include the <Name Repositories>.
-
-All source repositories are scraped <Insert Period> to populate the Dashworks database.

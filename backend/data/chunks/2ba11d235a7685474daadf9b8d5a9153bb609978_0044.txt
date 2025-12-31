@@ -1,0 +1,7 @@
+lone 
+generative models: their tendency to generate plausible but incorrect information, commonly 
+referred to as hallucination. This limitation is particularly concerning in healthcare scenarios, 
+where accuracy and trustworthiness are essential. 
+To address this challenge, the Retrieval-Augmented Generation (RAG) paradigm has gained 
+prominence as an effective solution for healthcare-focused information retrieval and question 
+answering. RAG combines semantic retrieval with generative modeling

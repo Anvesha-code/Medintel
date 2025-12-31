@@ -1,0 +1,10 @@
+d developed a self-service AI platform to automatically
+generate executable API test scripts by interpreting Swagger/OpenAPI
+speciﬁcations.
+Built backend microservices using Python and FastAPI to orchestrate
+end-to-end workﬂows from Swagger ingestion to script generation and
+persistence.
+Implemented a modular Agent-based architecture consisting of
+Swagger parsers, input extractors, framework selectors, prompt
+generators, and code validators.
+Integrated Azure OpenAI (LLM APIs) to dynamically gene

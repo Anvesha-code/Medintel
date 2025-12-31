@@ -1,8 +1,0 @@
-e Data Management …………………………………15 2.2 Advances in Natural Language Processing for Healthcare ……………………15 2.3 Vector Databases in Healthcare Applications ………………………………………16 3. Chapter 3: System Architecture and Design ................................................17 3.1 Cloud-Native Architecture Overview ……………………………………………………17 3.2 Data Storage and Security Design ………………………………………………………..17
-4
-11
-22
-Page 15 of 41 - Integrity Submission
-Page 15 of 41 - Integrity Submission
-
-11 3.3 AI Pipeline Architecture ……………………………………………………………………….18 4.

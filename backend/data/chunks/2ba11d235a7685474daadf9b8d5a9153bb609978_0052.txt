@@ -1,0 +1,4 @@
+ort 
+document ingestion, processing, semantic indexing, and intelligent querying. Each component is 
+responsible for a well-defined function, allowing individual services to be updated, scaled, or 
+optimized without impacting the overall system. This separation of concerns improves

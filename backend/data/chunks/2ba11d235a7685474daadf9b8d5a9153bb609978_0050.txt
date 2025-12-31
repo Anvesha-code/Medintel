@@ -1,0 +1,10 @@
+abase–driven architectures 
+for healthcare applications that require reliable semantic search, longitudinal analysis, and 
+explainable AI-driven responses 
+ 
+Chapter 3: System Architecture and Design 
+ 
+3.1 Architecture Overview 
+The MedIntel system is designed using a modular, service-oriented architecture that supports 
+scalability, extensibility, and long-term healthcare data management. Rather than being tightly 
+coupled to a single cloud provider, MedIntel follows a cloud-ready and local-fi

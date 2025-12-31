@@ -1,0 +1,7 @@
+al documentation accumulated 
+over an individual’s lifetime. Each objective contributes to the development of a robust, 
+Generative AI–powered system capable of securely storing, organizing, and retrieving healthcare 
+information through natural language interaction. At the mid-semester stage, significant progress 
+has been achieved in establishing the foundational components of the system. 
+The following table presents the objectives of the project along with their corresponding 
+achievement st

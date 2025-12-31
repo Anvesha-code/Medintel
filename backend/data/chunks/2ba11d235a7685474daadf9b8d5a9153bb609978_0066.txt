@@ -1,0 +1,31 @@
+13 
+Table 4.2: MedIntel Technology Stack Implementation Status 
+ 
+Component 
+Purpose 
+Status 
+Implementation Details 
+Local File Storage 
+Document 
+storage 
+Completed Structured directory-based 
+storage 
+FastAPI 
+Backend API 
+Completed Upload, query, and document 
+endpoints 
+SQLite / PostgreSQL 
+Metadata storage 
+In 
+Progress 
+Document metadata and user 
+data 
+Vector Database (Qdrant / 
+pgvector) 
+Semantic search 
+In 
+Progress 
+Embedding storage and 
+similarity search 
+Sentence Transformer 
+Mode

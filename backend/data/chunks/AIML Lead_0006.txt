@@ -1,0 +1,21 @@
+lding production-grade NLP systems.
+
+Experience leading or owning AI/ML initiatives end-to-end.
+
+Technical Skills
+
+Python (Advanced) with strong software engineering practices.
+
+Strong foundation in Machine Learning & Deep Learning.
+
+Hands-on experience with NLP techniques and libraries.
+
+Experience with PyTorch / TensorFlow / Keras.
+
+Strong knowledge of Transformer architectures and LLMs.
+
+Experience with Hugging Face Transformers.
+
+GenAI & LLMs
+
+Experience working with Large Language Models (O

@@ -1,0 +1,10 @@
+14 
+ 
+Chapter 5: Technical Achievements 
+5.1 Completion of System Architecture Design 
+One of the key technical achievements of the MedIntel project is the successful completion of its 
+end-to-end system architecture design. The architecture has been carefully designed to support 
+intelligent document processing and contextual question answering within the healthcare 
+domain. 
+The MedIntel architecture integrates multiple backend components—including document 
+ingestion, preprocessing, vector-ba

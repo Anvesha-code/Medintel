@@ -1,7 +1,0 @@
-ncryption at rest and in transit for all sensitive data • Comprehensive audit logging for compliance purposes[1]
-3
-18
-Page 30 of 41 - Integrity Submission
-Page 30 of 41 - Integrity Submission
-
-26 5.3 Development Environment Setup The development environment has been fully configured with all necessary AWS services and development tools. This includes: • AWS account setup with appropriate IAM roles and policies • Development and staging environments configured • Continuous integration/continuous

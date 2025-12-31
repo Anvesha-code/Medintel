@@ -1,3 +1,0 @@
-and growing data volumes.
-
-7. Any other details in support of the work: The project aligns with current trends in digital health and the increasing adoption of AI for personalized services. The specific choice of AWS services, particularly Amazon Bedrock with its managed foundation models and Aurora PostgreSQL with pgvector, positions HealthAssist at the forefront of leveraging advanced cloud AI capabilities for practical, real-world problems in healthcare. The RAG approach is particularly power

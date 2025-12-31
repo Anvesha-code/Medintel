@@ -1,6 +1,0 @@
-rformance and security for each data type[1].
-24
-Page 22 of 41 - Integrity Submission
-Page 22 of 41 - Integrity Submission
-
-18 3.3 AI Pipeline Architecture The AI pipeline implements a sophisticated RAG architecture using Amazon Bedrock services. Document processing begins with S3 event triggers that automatically initiate the embedding generation process using the amazon titan-embed-text-v2:0 model. This process converts unstructured healthcare documents into high-dimensional vector representations that capture semantic meaning[1].

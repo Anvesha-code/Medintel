@@ -1,0 +1,7 @@
+9 
+foundational motivation for MedIntel’s design, which leverages NLP and RAG techniques to 
+enable safe, context-aware natural language interaction with lifelong personal healthcare records. 
+2.3 Vector Databases in Healthcare Applications 
+The literature also emphasizes the growing importance of vector databases in enabling semantic 
+search and similarity-based retrieval for data-intensive applications, including healthcare 
+systems. Unlike traditional relational databases optimized for exact

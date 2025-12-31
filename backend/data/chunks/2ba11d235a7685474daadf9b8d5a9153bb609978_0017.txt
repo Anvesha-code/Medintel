@@ -1,0 +1,7 @@
+e and context-aware retrieval across an individual’s complete medical 
+history. 
+The backend infrastructure is developed using FastAPI to support scalable API operations, 
+complemented by a vector database for similarity search and a relational database for 
+maintaining document metadata, timestamps, and processing lineage. Strict user-level data 
+separation is enforced to protect sensitive medical information. A Streamlit-based frontend 
+facilitates document upload, preview, and conversational

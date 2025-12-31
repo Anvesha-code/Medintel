@@ -1,0 +1,7 @@
+ng research and industry practices reveals that healthcare data management 
+remains predominantly institution-centric, with limited focus on long-term, individual-controlled 
+medical record management. Most healthcare information systems are designed to support 
+clinical operations within hospitals and diagnostic centers, emphasizing record creation, billing, 
+and compliance rather than empowering individuals to actively manage and understand their 
+medical information over time. 
+Although Elect

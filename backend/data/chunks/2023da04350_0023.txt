@@ -1,7 +1,0 @@
-ntBridge, Lambda), embedding generation using Amazon Bedrock, vector storage in Aurora PostgreSQL with pgvector, and conversation history management in DynamoDB.
-
-API Development: Creation of secure APIs using Amazon API Gateway and AWS Lambda to facilitate communication between the mobile app and the backend.
-
-Frontend Development: Development of the mobile application using AWS Amplify, focusing on an intuitive user interface for voice/text input and displaying AI-generated responses.
-
-RAG Pip

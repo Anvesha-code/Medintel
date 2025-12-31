@@ -1,0 +1,19 @@
+duction environments.
+
+Work with structured and unstructured data at scale.
+
+MLOps & Deployment
+
+Design and maintain ML pipelines for training, testing, and deployment.
+
+Implement model versioning, experimentation, and lifecycle management using MLflow, DVC, or similar tools.
+
+Deploy models using Docker, Kubernetes, and CI/CD pipelines.
+
+Monitor model performance, drift, and reliability in production.
+
+Collaboration & Mentorship
+
+Mentor and guide junior AI/ML engineers and data scientists.
+
+Coll

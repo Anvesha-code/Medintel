@@ -1,0 +1,13 @@
+17 
+8.1 Immediate Next Steps (Weeks 9–12) 
+The immediate focus after the mid-semester phase is on strengthening MedIntel’s AI-driven 
+capabilities: 
+1. RAG Pipeline Finalization 
+Complete the full retrieval and response generation pipeline for accurate and context-
+aware answers. 
+2. API Expansion 
+Enhance backend APIs to support future integrations and frontend features. 
+3. System Validation 
+Perform functional and performance validation to ensure system stability. 
+ 
+8.2 User Interface Develo

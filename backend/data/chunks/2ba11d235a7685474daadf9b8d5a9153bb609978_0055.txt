@@ -1,0 +1,7 @@
+ment identifiers, timestamps, document categories, and 
+extraction lineage. This metadata layer enables chronological organization and longitudinal 
+analysis of medical records. 
+Semantic representations of document content are stored separately within a vector database, 
+where each embedding is associated with metadata such as user identifiers, document references, 
+and source types. This design enables efficient similarity-based retrieval while maintaining strict 
+separation between users’ dat

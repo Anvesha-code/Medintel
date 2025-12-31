@@ -1,0 +1,6 @@
+ditional relational databases optimized for exact matching, vector databases 
+are designed to store high-dimensional embeddings and efficiently retrieve semantically similar 
+content. This capability is particularly valuable in healthcare, where equivalent medical concepts 
+may be expressed using varied terminology, abbreviations, or phrasing. 
+Studies have demonstrated that embedding-based retrieval approaches outperform keyword-
+based search methods when applied to medical documents, especiall

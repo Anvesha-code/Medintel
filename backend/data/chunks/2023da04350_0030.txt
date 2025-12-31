@@ -1,7 +1,0 @@
-rom user documents.
-
-To establish a secure and efficient vector database using Amazon Aurora PostgreSQL with the pgvector extension, ensuring multi-tenant data isolation through row-level security.
-
-To develop a Retrieval-Augmented Generation (RAG) pipeline that accurately retrieves contextual information from user documents and augments prompts for an LLM (anthropic.claude-3-sonnet-20240229-v1:0) to generate relevant answers to natural language queries.
-
-To design and develop a user-friendly mo

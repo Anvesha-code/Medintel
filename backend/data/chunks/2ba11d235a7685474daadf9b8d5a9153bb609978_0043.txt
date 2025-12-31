@@ -1,0 +1,7 @@
+for more accurate extraction, classification, and interpretation 
+of medical information. 
+The emergence of Large Language Models (LLMs) has further enhanced the ability of AI 
+systems to understand nuanced medical language and context. These models demonstrate strong 
+capabilities in processing clinical narratives, diagnostic descriptions, and patient-related 
+documentation. However, the literature also highlights a critical limitation of standalone 
+generative models: their tendency to generat

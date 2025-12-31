@@ -1,0 +1,4 @@
+zed 
+model knowledge. By combining semantic retrieval with controlled generation, the MedIntel AI 
+pipeline enhances accuracy, reduces the risk of hallucination, and provides explainable responses 
+suitable for healthcare-related use cases.

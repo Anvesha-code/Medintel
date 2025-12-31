@@ -1,0 +1,13 @@
+integrity, and controlled access, which are critical requirements for 
+healthcare-related systems. 
+Key security measures implemented in MedIntel include: 
+ 
+User authentication and access control mechanisms to restrict system usage to 
+authorized users 
+ 
+Logical data separation to prevent unauthorized access across different users or sessions 
+ 
+Secure storage practices for documents and metadata 
+ 
+Activity logging to track system interactions and support auditing requirements 
+Chapter 6

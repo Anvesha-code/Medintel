@@ -1,0 +1,7 @@
+11 
+the system converts the query into an embedding and performs a similarity search to identify the 
+most relevant document segments from the user’s stored medical data. 
+The retrieved content is then used to augment the input provided to a language model, guiding 
+response generation using factual, user-specific context. This approach ensures that generated 
+answers are grounded in actual medical documents rather than relying solely on generalized 
+model knowledge. By combining semantic retrie

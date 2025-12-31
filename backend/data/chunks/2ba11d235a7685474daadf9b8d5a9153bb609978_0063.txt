@@ -1,0 +1,7 @@
+service-oriented backend design, where each functional component—
+document upload, text extraction, embedding generation, and query handling—is implemented 
+as an independent module. This structure improves code maintainability and allows future 
+enhancements without affecting existing functionality. 
+The backend is implemented using FastAPI, which provides lightweight, high-performance 
+APIs for handling document uploads and user queries. Uploaded documents are processed 
+automatically through

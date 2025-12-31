@@ -1,2 +1,0 @@
-Tab=Runbooks, Field=Outputs (Return Data):, Description=Use this field to identify all output data is listed including things like guid, employee ID, etc., Notes (if applicable)=nan
-Tab=Runbooks, Field=Success Result:, Description=Use this field to identify what action/data/information to expect to see if the runbook runs successfully., Notes (if applicable)=nan

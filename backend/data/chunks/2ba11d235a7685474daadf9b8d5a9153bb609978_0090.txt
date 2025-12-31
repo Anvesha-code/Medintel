@@ -1,0 +1,12 @@
+practical challenges and applications of ML systems in healthcare.) 
+ 
+IEEE Transactions on Biomedical and Health Informatics 
+Recent survey articles on AI-driven clinical decision support and healthcare document 
+analysis. 
+(Used to understand healthcare AI system requirements and constraints.) 
+ 
+Journal of the American Medical Informatics Association (JAMIA) 
+Research articles on clinical NLP, electronic health record (EHR) analysis, and AI-
+assisted healthcare systems. 
+ 
+PostgreSQL pgve

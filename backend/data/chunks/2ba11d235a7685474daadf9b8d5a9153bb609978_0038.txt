@@ -1,0 +1,8 @@
+8 
+portals. Patients typically receive their medical documents in heterogeneous formats such as PDF 
+reports, scanned prescriptions, laboratory spreadsheets, diagnostic images, and discharge 
+summaries, which are stored independently across devices, applications, or physical records. 
+This lack of consolidation results in fragmented medical histories, making it difficult to retrieve 
+relevant information during follow-up consultations, emergencies, or long-term health 
+monitoring. 
+The literatur

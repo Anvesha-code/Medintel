@@ -1,0 +1,7 @@
+ional keyword-based retrieval systems and 
+enables deeper contextual understanding of medical data. 
+The innovative aspects of MedIntel also include its approach to long-term data organization 
+and privacy-aware system design. The platform is structured as a persistent, append-only 
+medical knowledge repository, allowing healthcare data to be accumulated and queried 
+longitudinally across an individual’s lifetime. User-level data isolation is enforced across both 
+relational and vector storage l

@@ -1,0 +1,7 @@
+rity search. These 
+retrieved document segments are then used to augment the input prompt provided to the 
+language model, allowing it to generate answers that are context-aware, accurate, and traceable 
+to the original medical sources. Unlike traditional keyword-based search systems, which are 
+limited by exact term matching and lack contextual understanding, MedIntel employs semantic 
+embeddings to capture the underlying meaning of medical text. This enables the system to 
+retrieve relevant in

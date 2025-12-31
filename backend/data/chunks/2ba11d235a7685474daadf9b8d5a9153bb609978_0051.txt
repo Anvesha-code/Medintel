@@ -1,0 +1,7 @@
+vider, MedIntel follows a cloud-ready and local-first design, 
+enabling development and evaluation in a local environment while remaining deployable to 
+cloud platforms when required. This architectural approach ensures flexibility, cost control, and 
+ease of experimentation, which are important considerations for academic and healthcare-
+oriented systems. 
+The architecture is composed of multiple loosely coupled components that collectively support 
+document ingestion, processing, semantic inde

@@ -1,1 +1,0 @@
-Sample data is shown in blue italic font on the Global Configuration and Runbook pages for your convenience.=This is where each field used in thie Runbook Documentation Templated is defined.

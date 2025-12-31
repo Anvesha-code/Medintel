@@ -1,9 +1,0 @@
-uters and applications to correct Dashworks groups
-
-The onboarding link is found by logging into the project system and clicking on Onboarding -> Onboard Users/Computers
-
-At <Customer Name>, the project team will be onboarding users. Users are onboarded by pasting their LOGIN IP into the ‘Objects to search for:’ box, or by browsing them from the data warehouse.
-
-<INSERT SCREENSHOT OF ONBOARDING PAGE>
-
-Users will be onboarded into Dashworks GROUPS. You can only onboard one set of users into one group during the onboarding operation.

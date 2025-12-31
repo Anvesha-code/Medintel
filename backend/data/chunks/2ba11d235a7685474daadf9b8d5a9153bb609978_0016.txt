@@ -1,0 +1,6 @@
+ormats and employs a Retrieval-Augmented Generation (RAG) 
+framework to ensure that generated responses are derived directly from user-specific medical 
+records. During ingestion, documents undergo format-specific extraction, optical character 
+recognition where applicable, text normalization, and context-preserving chunking. The 
+processed content is then transformed into semantic embeddings and stored within a vector 
+database, enabling accurate and context-aware retrieval across an individual

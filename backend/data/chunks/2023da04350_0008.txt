@@ -1,3 +1,0 @@
-rity search within the PostgreSQL database to identify relevant information from the stored documents. This retrieved information then augments the prompt for the Large Language Model (LLM), anthropic.claude-3-sonnet, enabling it to generate precise and contextually relevant answers to user queries.
-
-Through its intuitive voice and text interface, HealthAssist empowers users to effortlessly navigate their healthcare landscape. Whether it's locating nearby doctors, checking insurance coverage det

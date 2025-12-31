@@ -1,9 +1,0 @@
-s them to confirm the machine or machines that they currently own, whether it is their primary machine, and if not, to ask them to find and add the machine that is their primary computer.
-
-<INSERT SCREENSHOT OF SELF-SERVICE COMPUTER OWNERSHIP PAGE>
-
-The user may also submit a note to let the project team know any specific information related to the PC ownership above.
-
-By clicking on Save & Continue, the PC ownership is reflected into the Dashworks database.
-
-12.5.3. Step 3 – Application Validat

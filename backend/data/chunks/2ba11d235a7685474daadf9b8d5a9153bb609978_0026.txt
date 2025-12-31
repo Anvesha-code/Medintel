@@ -1,0 +1,8 @@
+. This enables the system to 
+retrieve relevant information even when user queries use different terminology, abbreviations, or 
+phrasing, making MedIntel particularly effective for complex and heterogeneous healthcare data. 
+ 
+1.2 Stated Objectives and Mid-Semester Achievement Status 
+The MedIntel project is structured around a set of clearly defined objectives that collectively aim 
+to address the challenges of fragmented and unstructured medical documentation accumulated 
+over an individual’s

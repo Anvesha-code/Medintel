@@ -1,3 +1,0 @@
-the value of the application to <Customer Name>. The primary audience of the document is the Windows 7 project team. The audience is the project team who perform the project administration tasks. (i.e. project onboarding, task management, scheduling, deployment). It should be used to understand the practices and procedures to be adhered to for the application.
-
-The document contains a business and technical description of the project processes to be utilised within the application, operations, and troubleshooting techniques.

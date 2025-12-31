@@ -1,7 +1,0 @@
-Table 1.2 Timeline Phase Timeline Status Key Deliverables Phase 1 Weeks 1-2 Completed Literature review, project planning Phase 2 Weeks 3-5 Completed Architecture design, AWS setup Phase 3 Weeks 5-8 Completed Backend core development
-Phase 4 Weeks 9-12 Completed API development, RAG pipeline Phase 5 Weeks 13-16 Completed Frontend integration, testing
-
-Page 27 of 41 - Integrity Submission
-Page 27 of 41 - Integrity Submission
-
-23 4.2 AWS Services Implementation The AWS infrastructure setup has bee

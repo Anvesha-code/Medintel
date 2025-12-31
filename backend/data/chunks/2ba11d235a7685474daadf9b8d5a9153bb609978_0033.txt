@@ -1,0 +1,7 @@
+Rather than relying solely 
+on generative models, the system combines semantic retrieval with language generation to 
+ensure that responses are grounded in user-specific medical documents. This approach improves 
+accuracy, reduces hallucination risks, and enhances trustworthiness, which are essential 
+requirements for healthcare-related AI systems. By supporting multi-format document ingestion 
+and semantic search, MedIntel extends beyond traditional keyword-based retrieval systems and 
+enables

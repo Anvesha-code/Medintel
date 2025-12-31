@@ -1,0 +1,15 @@
+le.
+
+Key Responsibilities
+
+Technical Leadership
+
+Lead end-to-end development of AI/ML and NLP solutions, from problem formulation to production deployment.
+
+Architect and implement scalable NLP pipelines using classical ML, deep learning, and transformer-based models.
+
+Drive adoption of LLMs and Generative AI for use cases such as semantic search, summarization, Q&A, and conversational AI.
+
+Review model designs, code, and experiments to ensure quality, performance, and scalability.
+
+Establish be

@@ -1,3 +1,0 @@
-d from other users, even at the database level. The vector embeddings are stored using the pgvector extension, enabling efficient similarity searches while maintaining security boundaries. Conversation histories are managed through Amazon DynamoDB, providing fast, scalable storage for user interactions while maintaining the ability to provide contextual conversation flow. The separation of vector data and conversation data allows for optimized performance and security for each data type[1].
-24
-P

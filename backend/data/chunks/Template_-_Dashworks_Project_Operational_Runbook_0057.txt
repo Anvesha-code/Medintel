@@ -1,7 +1,0 @@
-rvice process, the following task dates get populated with the date that the page on self-service was completed:
-
-If all three task dates are populated then the user has completed the self-service. Dashworks will then change the value on the ‘Self-Service Process Complete’ task to ‘Yes’ within 24 hours, and the task will turn GREEN.
-
-12.7. Automated E-Mail Communication 2a (T-12 Self-Service Reminder)
-
-In the event that the user has not completed their self-service, they will receive an e-mail r

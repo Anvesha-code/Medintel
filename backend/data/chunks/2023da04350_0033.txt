@@ -1,7 +1,0 @@
-ness, and core functionalities of the Generative AI-powered personalized healthcare information management system. While the current scope aims for a functional prototype, full-scale production deployment, extensive clinical validation, and integration with external healthcare systems are beyond the immediate scope of this specific dissertation.
-
-Detailed Plan of Work (for 16 weeks)
-
-Literature References
-
-The following are referred journals and resources from the preliminary literature review:

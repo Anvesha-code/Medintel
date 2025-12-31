@@ -1,0 +1,6 @@
+tions and support auditing requirements 
+Chapter 6: Challenges and Solutions 
+ 
+6.1 Technical Challenges 
+During the mid-semester implementation phase of MedIntel, several technical challenges were 
+encountered while building and integrating the core system components.
