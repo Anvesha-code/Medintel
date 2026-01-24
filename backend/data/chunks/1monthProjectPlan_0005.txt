@@ -1,0 +1,11 @@
+ables → smaller chunks but include headers)
+• Save chunks to temp store
+
+🟦 DAY 5 — Local Database Setup
+• SQLite/Postgres schema: users, documents, chunks, embeddings metadata, media_transcripts table (audio), tables_metadata (for spreadsheets)
+• Store: filename, file_type, upload_time, user_id, page_count, sheet_count, language, extraction_status
+
+WEEK 2 — AI LAYER + VECTOR DB + RAG SYSTEM
+🟩 DAY 6 — Embeddings Model Integration
+• SentenceTransformers install & test
+• generate_embedding(text_chu

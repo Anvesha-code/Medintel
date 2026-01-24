@@ -1,0 +1,11 @@
+— Voice-to-Text & Media Enhancements (Optional/Improved)
+• Microphone input to capture voice notes → Whisper transcription → same RAG pipeline
+• Improve image OCR (layout preservation + table detection) and provide bounding box view (optional)
+
+WEEK 4 — SECURITY + DEPLOYMENT + FINAL POLISH
+🟥 DAY 19 — Authentication (MVP)
+• Auth0/Supabase, JWT, protect endpoints, restrict operations to owner user_id
+
+🟥 DAY 20 — Multi-Tenant Data Isolation
+• Enforce user_id in vector DB queries + SQL filters
+• Tes

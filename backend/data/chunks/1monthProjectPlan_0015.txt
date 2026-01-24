@@ -1,0 +1,10 @@
+, TXT, MP3/WAV; multiple users & sessions
+
+🟥 DAY 26 — Documentation Writing
+• Setup steps, API docs, extraction behavior per file type, architecture diagram, cost notes for production OCR/transcription
+
+🟥 DAY 27 — Demo Preparation
+• Demo script showing: upload different formats, extraction preview, chat query that pulls from spreadsheet + image OCR + audio transcript, PPT slide Q&A
+
+🟥 DAY 28 — Final Launch
+• Final performance check, push stable version, publish site, celebrate 🎉

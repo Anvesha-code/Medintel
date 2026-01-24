@@ -1,0 +1,5 @@
+ion design were adopted, such as separation of concerns, service-based components, and asynchronous processing where applicable. The architectural design has been validated through initial prototype implementations and internal design reviews, confirming its suitability for handling healthcare documents and AI-driven queries.
+
+5.2 Security and Data Protection Implementation
+
+MedIntel incorporates a structured security framework aimed at protecting sensitive healthcare information and ensuring co

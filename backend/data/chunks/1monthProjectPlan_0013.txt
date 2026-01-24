@@ -1,0 +1,12 @@
+e user_id in vector DB queries + SQL filters
+• Test with two users and different doc types
+
+🟥 DAY 21 — Deployment Setup
+• Deploy backend (Render / Cloud Run) + Streamlit (Streamlit Cloud)
+• Secrets + keys in env, storage migration readiness (S3)
+
+🟥 DAY 22 — Storage Upgrade (S3/GCS)
+• Replace local storage; implement direct upload to S3 presigned URL (if needed) and asynchronous extraction worker (MVP: still synchronous but S3 for persistence)
+
+🟥 DAY 23 — Monitoring & Analytics
+• Track queries pe

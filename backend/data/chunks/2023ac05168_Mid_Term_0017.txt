@@ -1,0 +1,5 @@
+nt processing and contextual question answering within the healthcare domain.
+
+The MedIntel architecture integrates multiple backend components—including document ingestion, preprocessing, vector-based retrieval, and response generation—into a unified workflow. Special emphasis was placed on modularity and scalability, ensuring that each component can be independently extended or replaced as the system evolves.
+
+Best practices for modern application design were adopted, such as separation of con

@@ -1,0 +1,11 @@
+●​ Building a conversational search agent (intelligent agent) to assist human in 
+searching their queries on web engine. 
+●​ Validation of the prototype is the key component of our project. As per the 
+research plan for the current project is to do the user evaluation of the current 
+prototype. 
+ 
+4.​ Scope of Work 
+ 
+Scope of this dissertation is to design a conversational search agent (dialogue based) 
+which searches the searcher queries on web search engine and provide the desired 
+informatio

@@ -1,0 +1,9 @@
+6.​ Literature References 
+ 
+The state art is the base for any successful research project. In current project, the 
+literature inclined towards the new domain of conversational information retrieval is 
+considered. The following are referred journals from the preliminary literature review. 
+[1]​
+S. Avula, G. Chadwick, J. Arguello, and R. Capra. Searchbots: User engagement 
+with chatbots during collaborative search. In Proceedings of the 2018 Conference on 
+Human Information Interaction & Retrie

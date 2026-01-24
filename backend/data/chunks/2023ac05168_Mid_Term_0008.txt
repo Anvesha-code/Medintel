@@ -1,0 +1,3 @@
+ted Generation (RAG) framework that combines semantic retrieval with controlled language generation. Document processing begins when a user uploads a file, triggering a sequence of extraction and preprocessing steps tailored to the document’s format. These steps include text extraction, optical character recognition where applicable, normalization, and intelligent chunking to preserve contextual meaning.
+
+Each processed text segment is transformed into a semantic embedding using a sentence-trans

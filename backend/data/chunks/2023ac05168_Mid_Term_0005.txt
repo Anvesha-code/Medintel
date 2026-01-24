@@ -1,0 +1,3 @@
+crementally over time. A relational database is used to maintain structured metadata, including document identifiers, timestamps, document categories, and extraction lineage. This metadata layer enables chronological organization and longitudinal analysis of medical records.
+
+Semantic representations of document content are stored separately within a vector database, where each embedding is associated with metadata such as user identifiers, document references, and source types. This design enab

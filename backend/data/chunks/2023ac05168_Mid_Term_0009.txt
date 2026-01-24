@@ -1,0 +1,3 @@
+d into a semantic embedding using a sentence-transformer-based model. These embeddings capture the underlying meaning of medical text and are stored within the vector database alongside relevant metadata. When a user submits a query, the system converts the query into an embedding and performs a similarity search to identify the most relevant document segments from the user’s stored medical data.
+
+The retrieved content is then used to augment the input provided to a language model, guiding respo

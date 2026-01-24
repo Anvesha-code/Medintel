@@ -1,0 +1,7 @@
+er or Speech-to-Text (transcribe)
+• Return: unified text_blocks (with source_type, page/slide/sheet_index, raw_text, structured_flag)
+
+🟦 DAY 4 — Text Cleaning + Chunking Logic (extended)
+• Cleaners per source type: remove headers/footers (PDF), remove slide footers, normalize tables → textual rows, preserve table context (prefix each row with column names)
+• chunk_text(text, chunk_size=500, overlap=50) + special handling for structured content (tables → smaller chunks but include headers)
+• Save

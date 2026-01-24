@@ -1,0 +1,4 @@
+the current scenario with respect to the chat bot and need of smart 
+search. 
+●​ Designing an agent that act as a human intermediary between human and web 
+search engine.

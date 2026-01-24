@@ -10,7 +10,7 @@ def transcribe_audio(file_path: str) -> dict:
         }
 
     try:
-        import whisper  # 🔥 lazy import (ONLY when enabled)
+        import whisper  #  lazy import (ONLY when enabled)
     except Exception as e:
         return {
             "text": "",

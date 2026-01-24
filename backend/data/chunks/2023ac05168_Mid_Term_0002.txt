@@ -1,0 +1,3 @@
+orms when required. This architectural approach ensures flexibility, cost control, and ease of experimentation, which are important considerations for academic and healthcare-oriented systems.
+
+The architecture is composed of multiple loosely coupled components that collectively support document ingestion, processing, semantic indexing, and intelligent querying. Each component is responsible for a well-defined function, allowing individual services to be updated, scaled, or optimized without imp

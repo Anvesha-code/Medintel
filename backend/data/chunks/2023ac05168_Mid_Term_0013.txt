@@ -1,0 +1,7 @@
+ploaded documents are processed automatically through the ingestion pipeline, eliminating the need for manual intervention. This approach ensures consistent handling of documents and prepares the system for intelligent retrieval tasks.
+
+4.2 Technology Stack Implementation
+
+Instead of relying on cloud-managed services, MedIntel uses a locally deployable and open-source technology stack to support development and testing. The implementation status of key components is outlined below.
+
+Table 4.2: M

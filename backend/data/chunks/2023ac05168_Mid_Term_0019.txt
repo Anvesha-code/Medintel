@@ -1,0 +1,9 @@
+g sensitive healthcare information and ensuring controlled access to system resources. The security design focuses on data confidentiality, integrity, and controlled access, which are critical requirements for healthcare-related systems.
+
+Key security measures implemented in MedIntel include:
+
+User authentication and access control mechanisms to restrict system usage to authorized users
+
+Logical data separation to prevent unauthorized access across different users or sessions
+
+Secure storage pra

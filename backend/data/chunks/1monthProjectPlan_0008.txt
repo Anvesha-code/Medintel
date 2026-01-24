@@ -1,0 +1,9 @@
+ented rows)
+
+🟩 DAY 10 — RAG Assembly
+• Prompt builder aware of source types (e.g., when context is from table, instruct LLM to format answer as a table)
+• Integrate with LLM (OpenAI / Llama) and ensure LLM prompt encourages quoting source chunk ids + source_type
+
+🟩 DAY 11 — RAG Relevance Testing (multi-format)
+• Test documents: insurance PDF, scanned prescriptions, DOCX reports, XLSX lab results, PPT clinical slides, image scans, audio notes
+• Tune chunk size, overlap, retrieval count per source

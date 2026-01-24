@@ -1,0 +1,9 @@
+show table snippets for spreadsheet answers, show image thumbnails with OCR text highlight, attach source link to chunk
+
+🟧 DAY 16 — Document List & Search Page
+• List documents with type icons, page/slide/sheet counts, extraction status, delete + reprocess buttons (for re-OCR or re-transcription)
+
+🟧 DAY 17 — UX Enhancements
+• Toasts, errors, PDF preview, image zoom, audio player with clickable transcript (time-linked), icons & branding
+
+🟧 DAY 18 — Voice-to-Text & Media Enhancements (Optional/Imp

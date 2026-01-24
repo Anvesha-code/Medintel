@@ -1,0 +1,13 @@
+age Understanding.
+NAACL-HLT.
+(Relevant for contextual embeddings and transformer-based language understanding.)
+
+Reimers, N., & Gurevych, I.
+Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.
+EMNLP.
+(Primary reference for sentence-transformer–based embedding generation used in MedIntel.)
+
+Johnson, A. E. W., Pollard, T. J., Shen, L., et al.
+MIMIC-III, a freely accessible critical care database.
+Scientific Data.
+(Widely cited healthcare dataset paper; supports healthcare document res

@@ -1,0 +1,10 @@
+rmers install & test
+• generate_embedding(text_chunk, model="all-MiniLM-L6-v2")
+• Add metadata flags (source_type, doc_id, chunk_index, structured_flag)
+
+🟩 DAY 7 — Vector Database Setup
+• Create Qdrant/Pinecone index with metadata fields: id, embedding, document_id, user_id, chunk_index, source_type, language, structured_flag
+• store_embedding() function
+
+🟩 DAY 8 — Full Embedding Storage Pipeline (multi-format)
+• End-to-end: upload → extract_text (multi) → clean → chunk → embed → store → save me

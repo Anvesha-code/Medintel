@@ -1,0 +1,14 @@
+e focus after the mid-semester phase is on strengthening MedIntel’s AI-driven capabilities:
+
+RAG Pipeline Finalization
+Complete the full retrieval and response generation pipeline for accurate and context-aware answers.
+
+API Expansion
+Enhance backend APIs to support future integrations and frontend features.
+
+System Validation
+Perform functional and performance validation to ensure system stability.
+
+8.2 User Interface Development (Weeks 13–16)
+
+The final development phase concentrates on user i

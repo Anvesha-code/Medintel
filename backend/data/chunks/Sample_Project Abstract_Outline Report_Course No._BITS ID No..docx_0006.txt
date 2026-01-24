@@ -1,0 +1,11 @@
+user and increase the cognitive load. A smart search agent is in high demand. 
+A conversational agent (intelligent agent) would act as an intermediary between the 
+user and the web search engine. The conversational search agent helps the user in order 
+to get the desired seeking information by reducing the cognitive load and increase the 
+effectiveness of search. 
+ 
+3.​ Objectives 
+ 
+The objectives of my project are as follows: 
+ 
+●​ Understand the current scenario with respect to the chat bot

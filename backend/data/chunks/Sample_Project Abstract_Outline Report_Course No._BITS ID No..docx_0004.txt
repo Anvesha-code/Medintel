@@ -1,0 +1,10 @@
+1.​ Broad Area of Work 
+ 
+Conversational agent and chat bots are new research areas in current era of Information 
+Science. The broad range of our project include current Artificial intelligence, 
+Information retrieval and extractions techniques. The current research project focus in 
+the following application areas: 
+ 
+●​ Natural language processing: To extract the right information 
+●​ Knowledge representation: To store information during the interrogation 
+●​ Automated reasoning: To use both

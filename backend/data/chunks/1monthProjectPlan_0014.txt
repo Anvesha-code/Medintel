@@ -1,0 +1,10 @@
+DAY 23 — Monitoring & Analytics
+• Track queries per doc type, OCR success rates, transcription duration, common document types
+
+🟥 DAY 24 — Bug Fixing + Edge Cases
+• Corrupt files, empty text, partial OCR, audio low confidence, large spreadsheets (split sheets), long conversation sessions, LLM hallucination reduction
+
+🟥 DAY 25 — Final QA Testing (multi-format)
+• Upload & test 10+ document types: PDF, scanned PDF, image, DOCX, PPTX, XLSX, CSV, HTML, TXT, MP3/WAV; multiple users & sessions
+
+🟥 DAY 2

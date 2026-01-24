@@ -1,0 +1,5 @@
+Intel is designed to support persistent storage of conversational interactions, enabling contextual continuity across user sessions. By logically separating document data, semantic embeddings, and interaction history, the system achieves improved performance, scalability, and security while remaining adaptable to future enhancements in storage technologies.
+
+3.3 AI Pipeline Architecture
+
+The MedIntel AI pipeline is built around a Retrieval-Augmented Generation (RAG) framework that combines seman

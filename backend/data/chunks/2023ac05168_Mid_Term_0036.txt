@@ -1,0 +1,7 @@
+h workflows.)
+
+FastAPI Official Documentation
+(Referenced for backend API design, asynchronous request handling, and system integration.)
+
+OpenAI / LLM API Technical Documentation
+(Used for understanding large language model integration and response generation.)

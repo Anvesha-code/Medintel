@@ -1,0 +1,7 @@
+Document Upload UI (multi format)
+• Uploader → send to /upload with file_type detection; display extraction summary per file (pages, slides, sheets, transcript length, chunk count)
+• Show progress + previews (first page text, thumbnail for images, audio transcript snippet)
+
+🟧 DAY 15 — Chat UI + Real-Time Querying
+• Chat interface supports: ask across all stored docs or select a specific doc/sheet/slide/image/audio transcript
+• Special renderers: show table snippets for spreadsheet answers, show

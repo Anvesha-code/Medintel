@@ -1,0 +1,12 @@
+re dataset paper; supports healthcare document research context.)
+
+Rajkomar, A., Dean, J., & Kohane, I.
+Machine Learning in Medicine.
+New England Journal of Medicine.
+(Explains practical challenges and applications of ML systems in healthcare.)
+
+IEEE Transactions on Biomedical and Health Informatics
+Recent survey articles on AI-driven clinical decision support and healthcare document analysis.
+(Used to understand healthcare AI system requirements and constraints.)
+
+Journal of the American Medica

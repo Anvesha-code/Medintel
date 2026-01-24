@@ -1,0 +1,13 @@
+of key components is outlined below.
+
+Table 4.2: MedIntel Technology Stack Implementation Status
+
+4.3 Challenges Encountered
+
+Several challenges were identified during the implementation of MedIntel:
+
+Vector Search Performance
+Storing and querying high-dimensional embeddings for large documents required experimentation with chunk sizes, embedding strategies, and similarity search configurations to maintain efficient response times.
+
+Document Format Handling
+Supporting multiple document formats i

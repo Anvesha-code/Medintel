@@ -1,0 +1,9 @@
+oho, and M. Sanderson. Informing the 
+design of spoken conversational search: Perspective paper. In Proceedings of the 2018 
+Conference on Human Information Interaction & Retrieval, CHIIR ’18, pages 32–41, 
+New York, NY, USA, 2018. ACM. 
+[7]​
+J. R. Trippas, D. Spina, L. Cavedon, and M. Sanderson. How do people interact 
+in conversational speech-only search tasks: A preliminary analysis. In Proceedings of 
+the 2017 Conference on Conference Human InformationInteraction and Retrieval, 
+CHIIR ’17, p

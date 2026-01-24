@@ -1,0 +1,3 @@
+es to be updated, scaled, or optimized without impacting the overall system. This separation of concerns improves maintainability and enables incremental system evolution as new features or data types are introduced.
+
+At a high level, MedIntel consists of a backend API layer, a document processing pipeline, a semantic retrieval layer, persistent storage components, and a user-facing interface. These components work together to enable seamless ingestion of medical documents and natural language i

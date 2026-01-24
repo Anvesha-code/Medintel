@@ -1,0 +1,11 @@
+(multi) → clean → chunk → embed → store → save metadata in SQL
+• Test with PDF, DOCX, PPTX, XLSX, image, audio sample files
+
+🟩 DAY 9 — Query Processing Pipeline
+• Convert user query → embedding
+• Similarity search + filtering (user_id, document_type)
+• Post-processing for structured results (if matching table chunk, format returned data as table snippet)
+• Retrieve top-k with different k per source_type (e.g., tables use smaller k to avoid fragmented rows)
+
+🟩 DAY 10 — RAG Assembly
+• Prompt buil

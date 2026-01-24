@@ -1,0 +1,7 @@
+within the MedIntel system:
+
+Search Performance Optimization
+Multiple experiments were conducted with chunk sizes, embedding strategies, and similarity metrics to improve retrieval speed and relevance. These optimizations helped achieve consistent query performance even with larger document collections.
+
+Access Control Validation
+Structured validation logic and controlled query mechanisms were introduced to ensure that users can only access data relevant to their session or permissions. Regular

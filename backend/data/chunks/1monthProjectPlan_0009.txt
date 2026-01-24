@@ -1,0 +1,12 @@
+ne chunk size, overlap, retrieval count per source type
+
+🟩 DAY 12 — Logging + Observability
+• Log uploads, extraction success/failure per file type, transcription confidence, OCR accuracy metrics, LLM responses, errors
+
+WEEK 3 — STREAMLIT FRONTEND + INTEGRATION
+🟧 DAY 13 — Streamlit Project Setup
+• Layout: Sidebar, Tabs (Upload | Chat | Documents | Media)
+• Add upload dropzone that accepts multi file types and shows detected file type
+
+🟧 DAY 14 — Document Upload UI (multi format)
+• Uploader → sen

@@ -1,0 +1,7 @@
+ask, /documents endpoints
+• CORS, file upload handling (multipart), size limits, temp storage
+• Add file-type detection endpoint & util (mime-type + extension + content sniffing)
+
+🟦 DAY 3 — Multi-Format Extraction Pipeline (core change)
+• Install: PyMuPDF, pdfminer.six, python-docx, python-pptx, pandas, openpyxl, pillow, pytesseract / EasyOCR, beautifulsoup4, whisper (or whisper-tiny), SpeechRecognition (if needed)
+• Implement extract_text(file) dispatcher: auto-detect type and call correct extr

@@ -1,0 +1,3 @@
+input provided to a language model, guiding response generation using factual, user-specific context. This approach ensures that generated answers are grounded in actual medical documents rather than relying solely on generalized model knowledge. By combining semantic retrieval with controlled generation, the MedIntel AI pipeline enhances accuracy, reduces the risk of hallucination, and provides explainable responses suitable for healthcare-related use cases.
+
+Chapter 4: Implementation Progress

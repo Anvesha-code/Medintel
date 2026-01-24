@@ -1,0 +1,13 @@
+and constraints.)
+
+Journal of the American Medical Informatics Association (JAMIA)
+Research articles on clinical NLP, electronic health record (EHR) analysis, and AI-assisted healthcare systems.
+
+PostgreSQL pgvector Documentation and GitHub Repository
+(Referenced for vector storage, similarity search, and performance optimization.)
+
+Qdrant Vector Database Documentation
+(Used for understanding open-source vector database design and semantic search workflows.)
+
+FastAPI Official Documentation
+(Ref

@@ -1,0 +1,3 @@
+ent references, and source types. This design enables efficient similarity-based retrieval while maintaining strict separation between users’ data. User-level isolation is enforced consistently across both relational and vector storage layers by applying filtering mechanisms based on user identifiers, ensuring that each individual’s medical information remains private and inaccessible to others.
+
+In addition to document and embedding storage, MedIntel is designed to support persistent storage of

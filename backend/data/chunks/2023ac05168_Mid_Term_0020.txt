@@ -1,0 +1,14 @@
+ss different users or sessions
+
+Secure storage practices for documents and metadata
+
+Activity logging to track system interactions and support auditing requirements
+
+Chapter 6: Challenges and Solutions
+
+6.1 Technical Challenges
+
+During the mid-semester implementation phase of MedIntel, several technical challenges were encountered while building and integrating the core system components.
+
+Vector Search Performance
+Efficiently managing high-dimensional embeddings for large healthcare documents p

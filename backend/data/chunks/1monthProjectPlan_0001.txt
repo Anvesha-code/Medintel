@@ -1,0 +1,11 @@
+Full revised 28-day plan (high level — day by day)
+
+WEEK 1 — FOUNDATIONS (Backend + Data Pipeline Setup)
+🟦 DAY 1 — Project Setup + Architecture
+• GitHub repo, project structure (backend/frontend)
+• Stack decisions (FastAPI, Streamlit, Qdrant/Pinecone, local → S3)
+• Document flow + file-type support list (PDF, scanned PDF, TXT, JPG/PNG/TIFF, DOC/DOCX, PPT/PPTX, XLS/XLSX, CSV, HTML, Audio)
+
+🟦 DAY 2 — FastAPI Skeleton + Routing
+• /health, /upload, /ask, /documents endpoints
+• CORS, file upload hand

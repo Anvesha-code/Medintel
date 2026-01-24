@@ -1,0 +1,11 @@
+l resources were referred to during the literature review and development of the MedIntel system:
+
+Lewis, P., Perez, E., Piktus, A., et al.
+Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
+Advances in Neural Information Processing Systems (NeurIPS).
+(Foundational work defining the RAG architecture used in MedIntel.)
+
+Devlin, J., Chang, M. W., Lee, K., & Toutanova, K.
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.
+NAACL-HLT.
+(Relevant for contex

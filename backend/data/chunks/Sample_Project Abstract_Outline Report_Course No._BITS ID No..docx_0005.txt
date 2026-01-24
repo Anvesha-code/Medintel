@@ -1,0 +1,11 @@
+nterrogation 
+●​ Automated reasoning: To use both new and stored information and to draw new 
+conclusions and reasons 
+●​ Machine learning: To adapt and detect new patterns 
+ 
+2.​ Background 
+ 
+Technologies are getting smart day by day. These smart technologies have become an 
+essential part of human lives. In today’s era people are more dependent on web search 
+to seek information. Searching for information on web could also be stressful for the 
+user and increase the cognitive load. A smart se

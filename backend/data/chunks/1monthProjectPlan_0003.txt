@@ -1,0 +1,18 @@
+dispatcher: auto-detect type and call correct extractor
+
+PDF (text) → PyMuPDF/pdfminer
+
+PDF (scanned) → rasterize pages → OCR (Tesseract/EasyOCR)
+
+Images (JPG/PNG/TIFF) → OCR → text + bounding boxes (optional)
+
+DOC/DOCX → python-docx / docx2txt
+
+PPT/PPTX → python-pptx (slides + notes)
+
+XLS/XLSX / CSV → pandas (convert sheets/rows → structured text; detect header rows)
+
+HTML → BeautifulSoup (extract visible text, metadata)
+
+Audio (MP3/WAV) → Whisper or Speech-to-Text (transcribe)
+• Return: unifie

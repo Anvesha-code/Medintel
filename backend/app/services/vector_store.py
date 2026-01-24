@@ -55,7 +55,7 @@ class VectorStore:
             points=points
         )
 
-        print(f"✅ Stored {len(points)} vectors in Qdrant")
+        print(f" Stored {len(points)} vectors in Qdrant")
 
     # --------------------------------------------------
     # SEARCH VECTORS (SAFE DAY-9 VERSION)
@@ -67,7 +67,7 @@ class VectorStore:
         source_type: str | None = None,
         top_k: int = 5
     ):
-        print("🔍 SEARCH CALLED")
+        print(" SEARCH CALLED")
         print("   user_id:", user_id)
         print("   source_type:", source_type)
         print("   top_k:", top_k)
@@ -98,5 +98,5 @@ class VectorStore:
             #query_filter=search_filter
         )
 
-        print("🧲 QDRANT RESULTS:", len(results))
+        print(" QDRANT RESULTS:", len(results))
         return results

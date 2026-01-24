@@ -1,0 +1,7 @@
+at Handling
+Supporting multiple document formats introduced inconsistencies in text extraction quality. Additional preprocessing steps were required to normalize extracted content before embedding.
+
+System Integration Complexity
+Integrating the ingestion pipeline, vector database, and language model into a single retrieval workflow required careful handling of data flow, error cases, and response latency.
+
+Addressing these challenges has improved the robustness of the MedIntel backend and laid a
