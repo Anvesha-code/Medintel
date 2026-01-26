@@ -1,3 +1,5 @@
+# from dotenv import load_dotenv
+# load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes_upload import router as upload_router
@@ -5,6 +7,7 @@ from app.api.routes_chat import router as chat_router
 from app.api.routes_health import router as health_router
 from app.api.routes_documents import router as documents_router
 from app.db.init_db import init_db
+
 
 app = FastAPI(title="Medintel API",version="0.1.0")
 # CORS settings -

@@ -23,10 +23,12 @@ CREATE TABLE IF NOT EXISTS documents (
 CREATE TABLE IF NOT EXISTS chunks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     document_id INTEGER,
+    user_id INTEGER,
     chunk_index INTEGER,
     chunk_text TEXT,
     source_type TEXT,
-    FOREIGN KEY (document_id) REFERENCES documents(id)
+    FOREIGN KEY (document_id) REFERENCES documents(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 -- EMBEDDINGS METADATA (NO VECTORS YET)

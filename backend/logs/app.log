@@ -1,0 +1,53 @@
+2026-01-24 21:21:50,158 | INFO | app.api.routes_upload | File upload started | file_id=a2ce6473-9502-47cf-9bb8-2192f977f497 | filename=prescription1.pdf
+2026-01-24 21:21:50,161 | INFO | app.api.routes_upload | File upload accepted | file_id=a2ce6473-9502-47cf-9bb8-2192f977f497 | size=97592
+2026-01-24 21:25:10,560 | INFO | app.api.routes_upload | File upload started | file_id=b91d4b68-b632-42f2-b8a1-98ca62639ed1 | filename=prescription1.pdf
+2026-01-24 21:25:10,560 | INFO | app.api.routes_upload | File upload accepted | file_id=b91d4b68-b632-42f2-b8a1-98ca62639ed1 | size=97592
+2026-01-24 21:25:10,644 | INFO | app.services.extraction_dispatcher | Extraction routing started | file_id=b91d4b68-b632-42f2-b8a1-98ca62639ed1 | filename=prescription1.pdf | mime=application/pdf
+2026-01-24 21:25:10,653 | ERROR | app.services.extraction_dispatcher | Extraction failed | file_id=b91d4b68-b632-42f2-b8a1-98ca62639ed1 | filename=prescription1.pdf
+Traceback (most recent call last):
+  File "C:\Users\des\PycharmProjects\Medintel\backend\app\services\extraction_dispatcher.py", line 33, in extract_text
+    raw = extract_text_from_pdf(file_bytes)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: extract_text_from_pdf() missing 1 required positional argument: 'file_id'
+2026-01-24 21:50:32,628 | INFO | app.api.routes_upload | File upload started | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8 | filename=prescription1.pdf
+2026-01-24 21:50:32,630 | INFO | app.api.routes_upload | File upload accepted | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8 | size=97592
+2026-01-24 21:50:32,735 | INFO | app.services.extraction_dispatcher | Extraction routing started | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8 | filename=prescription1.pdf | mime=application/pdf
+2026-01-24 21:50:32,735 | INFO | app.services.pdf_extractor | PDF extraction started | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8
+2026-01-24 21:50:32,805 | INFO | app.services.pdf_extractor | OCR triggered | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8 | page=1
+2026-01-24 21:50:37,018 | INFO | app.services.pdf_extractor | PDF extraction completed | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8 | pages=1 | scanned=True
+2026-01-24 21:50:37,045 | INFO | app.services.extraction_dispatcher | Extractor selected | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8 | extractor=pdf
+2026-01-24 21:50:37,045 | INFO | app.services.extraction_dispatcher | PDF analysis | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8 | scanned=True
+2026-01-24 21:50:37,047 | INFO | app.services.extraction_dispatcher | Extraction completed | file_id=bfb0ac7b-aa61-4bac-80b6-ccec64af2bb8 | extractor=pdf | pages=1 | blocks=1
+2026-01-24 21:50:37,063 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-01-24 21:50:37,063 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-24 21:50:43,063 | INFO | httpx | HTTP Request: PUT http://127.0.0.1:6333/collections/medintel_chunk/points?wait=true "HTTP/1.1 200 OK"
+2026-01-24 21:51:52,889 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:51:52,919 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:51:55,337 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:51:55,363 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:55:02,819 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:55:02,865 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:55:06,887 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:55:06,913 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:55:08,787 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:55:08,817 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:58:14,307 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 21:58:14,327 | INFO | httpx | HTTP Request: POST http://127.0.0.1:6333/collections/medintel_chunk/points/search "HTTP/1.1 200 OK"
+2026-01-24 22:32:23,991 | INFO | app.api.routes_upload | File upload started | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0 | filename=prescription1.pdf
+2026-01-24 22:32:24,005 | INFO | app.api.routes_upload | File upload accepted | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0 | size=97592
+2026-01-24 22:32:24,140 | INFO | app.services.extraction_dispatcher | Extraction routing started | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0 | filename=prescription1.pdf | mime=application/pdf
+2026-01-24 22:32:24,147 | INFO | app.services.pdf_extractor | PDF extraction started | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0
+2026-01-24 22:32:24,229 | INFO | app.services.pdf_extractor | OCR triggered | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0 | page=1
+2026-01-24 22:32:28,022 | INFO | app.services.pdf_extractor | PDF extraction completed | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0 | pages=1 | scanned=True
+2026-01-24 22:32:28,044 | INFO | app.services.extraction_dispatcher | Extractor selected | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0 | extractor=pdf
+2026-01-24 22:32:28,046 | INFO | app.services.extraction_dispatcher | PDF analysis | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0 | scanned=True
+2026-01-24 22:32:28,046 | INFO | app.services.extraction_dispatcher | Extraction completed | file_id=6fc8eb5a-9b21-4224-b649-78dd852f2bf0 | extractor=pdf | pages=1 | blocks=1
+2026-01-24 22:32:28,085 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-01-24 22:32:28,085 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-24 22:32:33,247 | INFO | httpx | HTTP Request: PUT http://127.0.0.1:6333/collections/medintel_chunk/points?wait=true "HTTP/1.1 200 OK"
+2026-01-24 22:57:11,954 | INFO | app.api.routes_upload | File upload started | file_id=7c15f2de-e9ab-47c8-8c60-d96923494187 | filename=prescription1.pdf
+2026-01-24 22:57:11,954 | INFO | app.api.routes_upload | File upload accepted | file_id=7c15f2de-e9ab-47c8-8c60-d96923494187 | size=97592
+2026-01-24 22:57:19,429 | INFO | app.api.routes_upload | File upload started | file_id=834f585a-974b-4ab6-89b9-d2e4f229fc3f | filename=prescription1.pdf
+2026-01-24 22:57:19,429 | INFO | app.api.routes_upload | File upload accepted | file_id=834f585a-974b-4ab6-89b9-d2e4f229fc3f | size=97592
+2026-01-24 22:57:20,860 | INFO | app.api.routes_upload | File upload started | file_id=6c4713c6-9561-4b9a-a261-84a7be6dde57 | filename=prescription1.pdf
+2026-01-24 22:57:20,861 | INFO | app.api.routes_upload | File upload accepted | file_id=6c4713c6-9561-4b9a-a261-84a7be6dde57 | size=97592

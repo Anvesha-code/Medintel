@@ -63,7 +63,7 @@ class VectorStore:
     def search(
         self,
         query_embedding,
-        user_id: str,
+        user_id: int,
         source_type: str | None = None,
         top_k: int = 5
     ):
@@ -95,7 +95,7 @@ class VectorStore:
             collection_name=self.collection_name,
             query_vector=query_embedding,
             limit=top_k,
-            #query_filter=search_filter
+            query_filter=search_filter
         )
 
         print(" QDRANT RESULTS:", len(results))

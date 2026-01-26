@@ -8,7 +8,7 @@ router = APIRouter(prefix="/chat", tags=["chat"])
 rag = RAGPipeline()
 
 @router.post("/ask")
-async def ask(question: str = Query(..., min_length=1)):
+async def ask(question: str = Query(..., min_length=1),  user_id: int = Query(...)):
     """
     Ask route: embed the query and return top-k text chunks.
     Uses asyncio.to_thread to call the synchronous RAG search.
@@ -16,7 +16,7 @@ async def ask(question: str = Query(..., min_length=1)):
     try:
         # call blocking/search operation in a thread
         results = await asyncio.wait_for(
-            asyncio.to_thread(rag.search, question, 5),
+            asyncio.to_thread(rag.search, question, user_id),
             timeout=300
         )
         return {"answer_chunks": results}
