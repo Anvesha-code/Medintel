@@ -43,3 +43,7 @@ qdrant-client==1.9.1
 langid
 openai>=1.0.0
 python-dotenv
+loguru
+python-json-logger
+prometheus-client
+psutil
