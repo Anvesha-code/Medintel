@@ -1,0 +1,11 @@
+Future Scope & Enhancements
+Voice ̄ueries
+Enable voice-based medical interactions.
+Advanced Analytics
+Offer deeper insights into health history.
+EHR Integration
+Seamless connection with existing EHR systems.
+Multilingual Support
+Expand to support diverse languages.
+Enhanced Security
+Continuous improvement of performance and security.

@@ -1,0 +1,11 @@
+Challenges & Solutions
+Major Challenges Faced
+Vector search performance tuning.
+Handling inconsistent document formats.
+Integration of multiple AI components.
+Ensuring strict data security.
+Solutions Implemented
+Optimized chunking & embeddings.
+Preprocessing normalization for formats.
+Structured service-based integration.
+User-level access control & validation.

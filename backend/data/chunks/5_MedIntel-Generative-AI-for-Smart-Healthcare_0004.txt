@@ -1,0 +1,16 @@
+MedIntel: Our Proposed Solution
+Generative AI System
+A medical document intelligence 
+system powered by Generative AI.
+Personal Knowledge 
+Repository
+Functions as a lifelong healthcare 
+data repository for each user.
+Natural Language Interaction
+Enables intuitive conversation with 
+medical records.
+Retrieval-Augmented Generation (RAG)
+Ensures accuracy and contextual relevance in responses.
+Secure & Isolated Data
+Designed for secure, user-isolated access to sensitive 
+healthcare data.

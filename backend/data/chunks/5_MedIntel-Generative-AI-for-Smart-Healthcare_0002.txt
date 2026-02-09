@@ -1,0 +1,14 @@
+Challenges in Healthcare Data Management
+Scattered Records
+Medical data is fragmented across various sources and 
+formats.
+Format Diversity
+Data exists in PDFs, reports, images, and prescriptions, 
+complicating access.
+Ineffective Search
+Keyword-based search fails to capture medical context, 
+leading to missed information.
+Critical Information Risk
+High risk of overlooking vital medical details due to 
+disorganization.
+The need for an intelligent, unified medical data system is clear.

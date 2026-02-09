@@ -1,0 +1,6 @@
+System Architecture Overview
+Vector Store
+Ingestion
+Backend
+Frontend
+MedIntel features a modular, scalable, and cloud-ready design, ensuring efficient and secure data processing.

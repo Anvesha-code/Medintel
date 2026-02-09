@@ -1,0 +1,20 @@
+AI Pipeline: RAG Workflow
+01
+Document Upload
+User submits medical documents.
+02
+Extraction & Cleaning
+Text and OCR extraction, followed by 
+intelligent chunking.
+03
+Embedding & Storage
+Semantic embeddings generated and 
+stored in a vector database.
+04
+̄uery & Retrieval
+User query embedded, relevant medical 
+context retrieved.
+05
+Answer Generation
+LLM generates document-grounded 
+answers, preventing hallucination.

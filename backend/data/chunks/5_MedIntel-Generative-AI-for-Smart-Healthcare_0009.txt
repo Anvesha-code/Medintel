@@ -1,0 +1,15 @@
+Technology Stack
+Backend
+FastAPI (Python) for robust service delivery.
+Frontend
+Streamlit for an interactive user interface.
+Embeddings
+Sentence Transformer Models for semantic 
+understanding.
+Vector DB
+Qdrant / pgvector for efficient vector storage.
+Metadata DB
+PostgreSQL / SQLite for structured data management.
+LLM Integration
+OpenAI / compatible LLMs for generative capabilities.
+An open-source and locally deployable stack.

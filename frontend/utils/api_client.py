@@ -5,7 +5,7 @@ BACKEND_URL = "http://127.0.0.1:8000"
 
 
 # -------------------------------------------------
-# Upload Document (Day 14) – CORRECT
+# Upload Document (Day 14)
 # -------------------------------------------------
 def upload_file(
     file_bytes: bytes,
@@ -42,24 +42,19 @@ def upload_file(
 
 
 # -------------------------------------------------
-# Chat Query (Day 15) – FIXED
+# Chat Query (Day 15)
 # -------------------------------------------------
 def query_chat(
     question: str,
     user_id: int = 5
 ) -> Dict:
-    """
-    Calls FastAPI /chat/ask
-    Backend expects QUERY parameters, not JSON.
-    """
-
     params = {
         "question": question,
         "user_id": user_id
     }
 
     response = requests.post(
-        f"{BACKEND_URL}/chat/chat/ask",
+        f"{BACKEND_URL}/chat/ask",   # ✅ FIXED
         params=params,
         timeout=300
     )
@@ -70,5 +65,51 @@ def query_chat(
             f"Status: {response.status_code} | "
             f"Response: {response.text}"
         )
+
+    return response.json()
+
+
+# -------------------------------------------------
+# Documents APIs (Day 16)
+# -------------------------------------------------
+def get_documents(user_id: int = 5):
+    response = requests.get(
+        f"{BACKEND_URL}/documents/",  # ✅ FIXED
+        params={"user_id": user_id},
+        timeout=30
+    )
+
+    if not response.ok:
+        raise Exception(
+            f"Failed to fetch documents | "
+            f"Status: {response.status_code} | "
+            f"Response: {response.text}"
+        )
+
+    return response.json()
+
+
+def delete_document(doc_id: int, user_id: int = 5):
+    response = requests.delete(
+        f"{BACKEND_URL}/documents/{doc_id}",
+        params={"user_id": user_id},
+        timeout=30
+    )
+
+    if not response.ok:
+        raise Exception(response.text)
+
+    return response.json()
+
+
+def reprocess_document(doc_id: int, user_id: int = 5):
+    response = requests.post(
+        f"{BACKEND_URL}/documents/{doc_id}/reprocess",
+        params={"user_id": user_id},
+        timeout=30
+    )
+
+    if not response.ok:
+        raise Exception(response.text)
 
     return response.json()
