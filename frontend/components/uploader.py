@@ -6,6 +6,7 @@ from components.upload_progress import show_progress
 from components.upload_preview import show_preview
 from utils.session_state import add_uploaded_file
 
+
 def upload_section():
     st.subheader("📤 Upload Medical Documents")
 
@@ -26,8 +27,10 @@ def upload_section():
         file_type = detect_file_type(file.name)
         file_bytes = file.read()
 
+        # 🔹 Progress indicator
         show_progress(file.name)
 
+        # 🔹 Backend upload
         with st.spinner("Sending to backend..."):
             response = upload_file(
                 file_name=file.name,
@@ -35,17 +38,23 @@ def upload_section():
                 file_type=file_type
             )
 
+        # 🔹 Parse backend summary
         summary = parse_summary(response)
 
-        add_uploaded_file(file.name, file_type, file_bytes)
+        # 🔹 STORE METADATA (Day 14/15 schema)
+        add_uploaded_file({
+            "file_name": file.name,
+            "file_type": file_type,
+            "summary": summary
+        })
 
-        # Summary UI
+        # 🔹 Summary UI
         col1, col2, col3 = st.columns(3)
         col1.metric("Pages / Slides", summary["pages"])
         col2.metric("Chunks", summary["chunks"])
         col3.metric("Text Length", summary["text_length"])
 
-        # Preview UI
+        # 🔹 Preview UI
         show_preview(
             file_type=file_type,
             file_bytes=file_bytes,
