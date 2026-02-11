@@ -8,23 +8,31 @@ router = APIRouter(prefix="/chat", tags=["chat"])
 rag = RAGPipeline()
 
 @router.post("/ask")
-async def ask(question: str = Query(..., min_length=1),  user_id: int = Query(...)):
-    """
-    Ask route: embed the query and return top-k text chunks.
-    Uses asyncio.to_thread to call the synchronous RAG search.
-    """
+async def ask(
+    question: str = Query(..., min_length=1),
+    user_id: int = Query(...),
+    document_id: int | None = Query(None)
+):
     try:
-        # call blocking/search operation in a thread
         results = await asyncio.wait_for(
-            asyncio.to_thread(rag.search, question, user_id),
+            asyncio.to_thread(
+                rag.search,
+                question,
+                user_id,
+                document_id
+            ),
             timeout=300
         )
-        return {"answer_chunks": results}
-    except asyncio.TimeoutError:
-        raise HTTPException(status_code=504, detail="RAG search took too long, request timed out.")
-    except Exception as e:
-        # generic server error
-        raise HTTPException(status_code=500, detail=str(e))
 
+        return {"answer_chunks": results}
+
+    except asyncio.TimeoutError:
+        raise HTTPException(
+            status_code=504,
+            detail="RAG search took too long, request timed out."
+        )
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 

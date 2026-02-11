@@ -46,13 +46,15 @@ def upload_file(
 # -------------------------------------------------
 def query_chat(
     question: str,
-    user_id: int = 5
+    user_id: int = 5,
+    document_id: int | None = None
 ) -> Dict:
     params = {
         "question": question,
         "user_id": user_id
     }
-
+    if document_id:
+        params["document_id"] = document_id
     response = requests.post(
         f"{BACKEND_URL}/chat/chat/ask",
         params=params,

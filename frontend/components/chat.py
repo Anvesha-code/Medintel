@@ -10,10 +10,32 @@ from utils.api_client import query_chat, get_documents
 def chat_section():
     st.subheader("💬 Chat with Your Documents")
 
-    uploaded_files = get_uploaded_files()
-    if not uploaded_files:
-        st.info("Upload documents first to enable chat.")
+    # -------------------------------------------------
+    # 1️⃣ Fetch documents from backend (Knowledge Repo)
+    # -------------------------------------------------
+    try:
+        documents = get_documents(user_id=5)
+    except Exception as e:
+        st.error(f"Failed to load documents: {e}")
         return
+
+    if not documents:
+        st.info("📚 No documents found in your Knowledge Repository. Please upload first.")
+        return
+
+    # -------------------------------------------------
+    # 2️⃣ Document Selection
+    # -------------------------------------------------
+    doc_map = {doc["file_name"]: doc["id"] for doc in documents}
+
+    selected_doc_name = st.selectbox(
+        "📄 Select a document to chat with",
+        options=list(doc_map.keys())
+    )
+
+    selected_doc_id = doc_map[selected_doc_name]
+
+    st.success(f"Using document: {selected_doc_name}")
 
     # -----------------------------
     # Render Chat History

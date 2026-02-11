@@ -15,14 +15,15 @@ class RAGPipeline:
 
 
 
-    def search(self, query: str, user_id: int):
-        print("\n🚀 RAGPipeline.search() CALLED")
-        print("🔎 User Query:", query)
-        print("👤 User ID:", user_id)
+    def search(self, question, user_id, document_id=None):
 
+        print("\n🚀 RAGPipeline.search() CALLED")
+        print("🔎 User Query:", question)
+        print("👤 User ID:", user_id)
+        print("📄 Document ID:", document_id)
 
         # 1️⃣ Generate query embedding
-        query_embedding = self._embedder.generate_embedding(query)
+        query_embedding = self._embedder.generate_embedding(question)
         print("✅ Query embedding generated")
 
         retrieved_hits = []
@@ -31,6 +32,7 @@ class RAGPipeline:
         text_hits = self._vdb.search(
             query_embedding=query_embedding,
             user_id=user_id,
+            document_id=document_id,
             source_type="text",
             top_k=4
         )
@@ -50,6 +52,7 @@ class RAGPipeline:
         table_hits = self._vdb.search(
             query_embedding=query_embedding,
             user_id=user_id,
+            document_id=document_id,
             source_type="table",
             top_k=4
         )
@@ -72,6 +75,7 @@ class RAGPipeline:
                 query_embedding=query_embedding,
                 user_id=user_id,
                 source_type=None,
+                document_id=document_id,
                 top_k=3
             )
         print("hello this is", retrieved_hits)
@@ -87,21 +91,68 @@ class RAGPipeline:
             print("Text:", ctx["text"][:500])
 
         # 6️⃣ Build prompt
-        prompt = PromptBuilder.build(
-            question=query,
+        # 6️⃣ Build prompts (SYSTEM + USER)
+
+        system_prompt = """
+        You are MedIntel, a medical prescription question-answering assistant.
+
+        STRICT RULES:
+        - Answer ONLY using the provided CONTEXT
+        - Use exact wording from the document
+        - If the answer is present, say YES and quote it
+        - If truly absent, say: "Not mentioned in the prescription"
+        - Do NOT invent or infer
+        - Do NOT explain reasoning
+        - Do NOT repeat the rules
+
+        Diagnosis Questions:
+        - Extract text under “Diagnosis” or “Diagnosis / Complaint”
+
+        Medicine Questions:
+        - Extract ALL medicine names exactly as written
+        - Include dosage/frequency (OD, BD, TDS, mg, ORS, etc.)
+        - Return medicines as bullet list
+
+        Yes/No Questions:
+        - Answer "Yes" or "No" only if explicitly supported
+        - After Yes/No, quote the exact supporting line
+        """
+
+        user_prompt = PromptBuilder.build(
+            question=question,
             contexts=contexts
         )
 
-        print("\n📝 PROMPT (first 300 chars):")
-        print(prompt[:300])
+        combined_prompt = f"""
+        You are MedIntel.
 
-        # 7️⃣ Call LLM
-        answer = self._llm.generate(prompt)
+        Follow these rules strictly:
+        - Answer ONLY using the CONTEXT below
+        - Use exact wording from the document
+        - If present, say YES and quote it
+        - If absent, say: Not mentioned in the prescription
+        - Do NOT explain
+        - Do NOT repeat instructions
+
+        ---------------------
+        CONTEXT:
+        ---------------------
+        {user_prompt}
+
+        ---------------------
+        FINAL ANSWER:
+        ---------------------
+        """
+
+        print("\n📝 FINAL PROMPT (first 300 chars):")
+        print(combined_prompt[:300])
+
+        answer = self._llm.generate(prompt=combined_prompt)
 
         print("\n🤖 RAW LLM ANSWER:")
         print(answer)
 
-
+        answer = self._block_hallucinations(answer, contexts)
 
         return {
             "answer": answer,

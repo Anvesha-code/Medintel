@@ -58,21 +58,23 @@ class VectorStore:
         print(f" Stored {len(points)} vectors in Qdrant")
 
     # --------------------------------------------------
-    # SEARCH VECTORS (SAFE DAY-9 VERSION)
+    # SEARCH VECTORS (UPDATED WITH DOCUMENT FILTER)
     # --------------------------------------------------
     def search(
         self,
         query_embedding,
         user_id: int,
+        document_id: int | None = None,   # ✅ ADDED
         source_type: str | None = None,
         top_k: int = 5
     ):
         print(" SEARCH CALLED")
         print("   user_id:", user_id)
+        print("   document_id:", document_id)
         print("   source_type:", source_type)
         print("   top_k:", top_k)
 
-        # always filter by user
+        # Always filter by user
         must_conditions = [
             FieldCondition(
                 key="user_id",
@@ -80,7 +82,16 @@ class VectorStore:
             )
         ]
 
-        # filter by source_type ONLY if provided
+        # ✅ Filter by document_id if selected
+        if document_id:
+            must_conditions.append(
+                FieldCondition(
+                    key="doc_id",
+                    match=MatchValue(value=document_id)
+                )
+            )
+
+        # Filter by source_type only if provided
         if source_type:
             must_conditions.append(
                 FieldCondition(
@@ -100,3 +111,4 @@ class VectorStore:
 
         print(" QDRANT RESULTS:", len(results))
         return results
+
