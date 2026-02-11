@@ -2,3 +2,5 @@ streamlit
 requests
 python-multipart
 Pillow
+streamlit-extras
+

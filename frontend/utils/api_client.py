@@ -54,7 +54,7 @@ def query_chat(
     }
 
     response = requests.post(
-        f"{BACKEND_URL}/chat/ask",   # ✅ FIXED
+        f"{BACKEND_URL}/chat/chat/ask",
         params=params,
         timeout=300
     )
@@ -70,11 +70,11 @@ def query_chat(
 
 
 # -------------------------------------------------
-# Documents APIs (Day 16)
+# Documents APIs
 # -------------------------------------------------
 def get_documents(user_id: int = 5):
     response = requests.get(
-        f"{BACKEND_URL}/documents/",  # ✅ FIXED
+        f"{BACKEND_URL}/documents/",
         params={"user_id": user_id},
         timeout=30
     )
@@ -113,3 +113,22 @@ def reprocess_document(doc_id: int, user_id: int = 5):
         raise Exception(response.text)
 
     return response.json()
+
+# -------------------------------------------------
+# Download Document File (For Preview)
+# -------------------------------------------------
+def download_document_file(doc_id: int, user_id: int = 5):
+    response = requests.get(
+        f"{BACKEND_URL}/documents/{doc_id}/download",
+        params={"user_id": user_id},
+        timeout=60
+    )
+
+    if not response.ok:
+        raise Exception(
+            f"Download failed | "
+            f"Status: {response.status_code} | "
+            f"Response: {response.text}"
+        )
+
+    return response.content

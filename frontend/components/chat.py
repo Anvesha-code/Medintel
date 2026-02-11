@@ -4,7 +4,7 @@ from utils.session_state import (
     get_chat_history,
     add_chat_message
 )
-from utils.api_client import query_chat
+from utils.api_client import query_chat, get_documents
 
 
 def chat_section():

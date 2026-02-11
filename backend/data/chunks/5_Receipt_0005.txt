@@ -1,0 +1,27 @@
+r Pradesh
+Mobile Number
+6392386251
+Email ID
+choudharyharshitsonkar098@gmai
+l.com
+Description of Services
+SAC CODE
+Amount (INR)
+Release of Electricity Connection - Processing Charges
+996912
+200.00
+Total
+200.0
+Amount Chargeable (in words)
+Two Hundred Rupees And Zero Paisa Only
+Executive Engineer
+EUDD_VRINDAVAN
+Processing Fee Payment Details
+Paid Amount
+Payment Date
+Transaction ID
+Payment Gateway
+200
+05-02-2026
+CKT5OVH1AO9JLU
+BillDesk

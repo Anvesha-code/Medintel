@@ -27,36 +27,27 @@ def upload_section():
         file_type = detect_file_type(file.name)
         file_bytes = file.read()
 
-        # 🔹 Progress indicator
-        show_progress(file.name)
+        try:
+            with st.spinner("Uploading document..."):
+                upload_file(
+                    file_name=file.name,
+                    file_bytes=file_bytes,
+                    file_type=file_type
+                )
 
-        # 🔹 Backend upload
-        with st.spinner("Sending to backend..."):
-            response = upload_file(
-                file_name=file.name,
-                file_bytes=file_bytes,
-                file_type=file_type
+            # ✅ SUCCESS MESSAGE
+            st.success("✅ Document uploaded successfully!")
+
+            st.info(
+
+                    "📚 The document has been successfully saved to your Knowledge Repository.\n\n"
+                    "💬 You can now go to the Chat section and ask questions about this document.\n\n"
+                    "You can return anytime — your document remains securely stored for future queries."
+
+
             )
 
-        # 🔹 Parse backend summary
-        summary = parse_summary(response)
-
-        # 🔹 STORE METADATA (Day 14/15 schema)
-        add_uploaded_file({
-            "file_name": file.name,
-            "file_type": file_type,
-            "summary": summary
-        })
-
-        # 🔹 Summary UI
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Pages / Slides", summary["pages"])
-        col2.metric("Chunks", summary["chunks"])
-        col3.metric("Text Length", summary["text_length"])
-
-        # 🔹 Preview UI
-        show_preview(
-            file_type=file_type,
-            file_bytes=file_bytes,
-            preview_text=summary["preview"]
-        )
+        except Exception as e:
+            # ❌ FAILURE MESSAGE
+            st.error("❌ Failed to upload document.")
+            st.error(str(e))
