@@ -3,10 +3,10 @@ from utils.api_client import (
     get_documents,
     delete_document,
     reprocess_document,
-    download_document_file   # ✅ NEW
+    download_document_file
 )
 from utils.toast import success
-from utils.pdf_preview import show_pdf_preview   # ✅ NEW
+from utils.pdf_preview import show_pdf_preview
 
 
 ICON_MAP = {
@@ -20,9 +20,12 @@ ICON_MAP = {
 def documents_section():
     st.subheader("📄 Documents")
 
-    # 🔹 Fetch from backend DB
+    # ✅ JWT token from session
+    token = st.session_state["token"]
+
+    # 🔹 Fetch documents
     try:
-        documents = get_documents(user_id=5)
+        documents = get_documents(token)
     except Exception as e:
         st.error(f"Failed to load documents: {e}")
         return
@@ -49,9 +52,7 @@ def documents_section():
 
         with st.expander(f"{icon} {file_name}"):
 
-            # -----------------------
-            # 📊 Metrics Section
-            # -----------------------
+            # 📊 Metrics
             col1, col2, col3 = st.columns(3)
             col1.metric("Pages / Units", pages)
             col2.metric("Chunks", chunks)
@@ -59,28 +60,24 @@ def documents_section():
 
             st.divider()
 
-            # -----------------------
-            # 📄 Preview Section
-            # -----------------------
+            # 📄 Preview
             if file_type == "pdf":
                 if st.button("👁 Preview PDF", key=f"preview_{doc_id}"):
                     try:
-                        file_bytes = download_document_file(doc_id, user_id=5)
+                        file_bytes = download_document_file(doc_id, token)
                         show_pdf_preview(file_bytes)
                     except Exception as e:
                         st.error(f"Preview failed: {e}")
 
             st.divider()
 
-            # -----------------------
-            # ⚙️ Action Buttons
-            # -----------------------
+            # ⚙️ Actions
             col_a, col_b = st.columns(2)
 
             with col_a:
                 if st.button("🔁 Reprocess", key=f"re_{doc_id}"):
                     try:
-                        reprocess_document(doc_id, user_id=5)
+                        reprocess_document(doc_id, token)
                         st.success("Reprocessing started")
                         st.experimental_rerun()
                     except Exception as e:
@@ -89,7 +86,7 @@ def documents_section():
             with col_b:
                 if st.button("🗑 Delete", key=f"del_{doc_id}"):
                     try:
-                        delete_document(doc_id, user_id=5)
+                        delete_document(doc_id, token)
                         success("Document deleted")
                         st.experimental_rerun()
                     except Exception as e:

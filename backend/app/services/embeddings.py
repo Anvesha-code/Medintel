@@ -18,15 +18,19 @@ class EmbeddingService:
 
     def generate_embeddings_with_metadata(
         self,
-        chunks: List[Dict],          # 🔴 CHANGED
-        doc_id: str,
-        user_id: str = "test_user"
+        chunks: List[Dict],
+        doc_id: int,
+        user_id
     ) -> List[Dict]:
         """
-        Generate embeddings + attach metadata
+        Generate embeddings and attach consistent metadata
         """
         records = []
+
         print("Total chunks:", len(chunks))
+
+        # ✅ FORCE user_id to STRING (UUID-safe, JWT-safe)
+        user_id = str(user_id)
 
         for idx, chunk_obj in enumerate(chunks):
             text = chunk_obj["text"]
@@ -35,7 +39,7 @@ class EmbeddingService:
             embedding = self.generate_embedding(text)
 
             metadata = {
-                "user_id": user_id,
+                "user_id": user_id,          # ✅ FIXED
                 "doc_id": doc_id,
                 "chunk_index": idx,
                 "text": text,

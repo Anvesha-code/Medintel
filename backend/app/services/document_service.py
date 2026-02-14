@@ -13,7 +13,17 @@ from app.db.db import get_connection
 from app.services.vector_store import VectorStore
 
 
-def process_upload(file_bytes: bytes, filename: str, user_id: int) -> dict:
+def process_upload(file_bytes: bytes, filename: str, user_id) -> dict:
+    """
+    Process uploaded document:
+    - Extract text
+    - Clean & chunk
+    - Re-embed safely
+    - Store in Qdrant
+    """
+
+    # ✅ FORCE user_id to STRING (JWT SAFE)
+    user_id = str(user_id)
 
     # --------------------------------------------------
     # 1. Detect file type
@@ -21,7 +31,7 @@ def process_upload(file_bytes: bytes, filename: str, user_id: int) -> dict:
     mime, ext = detect_file_type(filename, file_bytes)
 
     # --------------------------------------------------
-    # 2. Extract content (SAFE)
+    # 2. Extract content
     # --------------------------------------------------
     extraction = extract_text(file_bytes, filename, mime)
 
@@ -81,7 +91,7 @@ def process_upload(file_bytes: bytes, filename: str, user_id: int) -> dict:
         )
 
     # --------------------------------------------------
-    # 5. Save document metadata (WITH user_id)
+    # 5. Save document metadata
     # --------------------------------------------------
     conn = get_connection()
     cur = conn.cursor()
@@ -98,7 +108,16 @@ def process_upload(file_bytes: bytes, filename: str, user_id: int) -> dict:
         document_id = cur.lastrowid
 
         # --------------------------------------------------
-        # 6. Generate embeddings
+        # 6. DELETE OLD EMBEDDINGS (CRITICAL FIX)
+        # --------------------------------------------------
+        vector_store = VectorStore()
+        vector_store.delete_by_document(
+            user_id=user_id,
+            document_id=document_id
+        )
+
+        # --------------------------------------------------
+        # 7. Generate embeddings
         # --------------------------------------------------
         embedding_service = EmbeddingService()
 
@@ -115,13 +134,12 @@ def process_upload(file_bytes: bytes, filename: str, user_id: int) -> dict:
             )
 
         # --------------------------------------------------
-        # 7. Store embeddings in Qdrant
+        # 8. Store embeddings in Qdrant
         # --------------------------------------------------
-        vector_store = VectorStore()
         vector_store.store(records)
 
         # --------------------------------------------------
-        # 8. Save chunks in DB
+        # 9. Save chunks in DB
         # --------------------------------------------------
         for idx, chunk_obj in enumerate(chunks_with_type):
             cur.execute(
@@ -134,7 +152,7 @@ def process_upload(file_bytes: bytes, filename: str, user_id: int) -> dict:
             )
 
         # --------------------------------------------------
-        # 9. Update document status
+        # 10. Update document status
         # --------------------------------------------------
         cur.execute(
             "UPDATE documents SET extraction_status=? WHERE id=?",
@@ -154,7 +172,7 @@ def process_upload(file_bytes: bytes, filename: str, user_id: int) -> dict:
         conn.close()
 
     # --------------------------------------------------
-    # 10. Save chunks locally (SAFE)
+    # 11. Save chunks locally
     # --------------------------------------------------
     saved_paths = save_chunks_locally(
         [c["text"] for c in chunks_with_type],
@@ -162,7 +180,7 @@ def process_upload(file_bytes: bytes, filename: str, user_id: int) -> dict:
     )
 
     # --------------------------------------------------
-    # 11. Final response
+    # 12. Final response
     # --------------------------------------------------
     return {
         "document_id": document_id,

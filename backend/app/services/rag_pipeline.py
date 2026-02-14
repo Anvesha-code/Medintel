@@ -19,32 +19,36 @@ class RAGPipeline:
 
         # 1️⃣ Generate embedding for the question
         query_embedding = self._embedder.generate_embedding(question)
+        print("✅ Query embedding generated")
 
         # 2️⃣ Retrieve relevant chunks
         retrieved_hits = []
 
-        retrieved_hits.extend(
-            self._vdb.search(
-                query_embedding=query_embedding,
-                user_id=user_id,
-                document_id=document_id,
-                source_type="text",
-                top_k=4
-            )
+        print("\n🔍 Searching TEXT chunks")
+        text_hits = self._vdb.search(
+            query_embedding=query_embedding,
+            user_id=user_id,
+            document_id=document_id,
+            source_type="text",
+            top_k=4
         )
+        retrieved_hits.extend(text_hits)
 
-        retrieved_hits.extend(
-            self._vdb.search(
-                query_embedding=query_embedding,
-                user_id=user_id,
-                document_id=document_id,
-                source_type="table",
-                top_k=4
-            )
+        print("\n🔍 Searching TABLE chunks")
+        table_hits = self._vdb.search(
+            query_embedding=query_embedding,
+            user_id=user_id,
+            document_id=document_id,
+            source_type="table",
+            top_k=4
         )
+        retrieved_hits.extend(table_hits)
+
+        print(f"\n📦 Total retrieved hits (before fallback): {len(retrieved_hits)}")
 
         # 3️⃣ Fallback search if nothing found
         if not retrieved_hits:
+            print("⚠️ No hits found, running fallback search")
             retrieved_hits = self._vdb.search(
                 query_embedding=query_embedding,
                 user_id=user_id,
@@ -53,18 +57,32 @@ class RAGPipeline:
                 top_k=3
             )
 
-        # 4️⃣ Prepare clean, generic context
-        contexts = self._prepare_context(retrieved_hits)[:4]
+        print(f"📦 Total retrieved hits (after fallback): {len(retrieved_hits)}")
 
-        print("\n🧠 CONTEXT SENT TO LLM:")
+        # 🔴 DEBUG RAW HITS
+        for i, h in enumerate(retrieved_hits, 1):
+            print(f"\n--- RAW HIT {i} ---")
+            print("Score:", h.score)
+            print("Doc ID:", h.payload.get("doc_id"))
+            print("Chunk Index:", h.payload.get("chunk_index"))
+            print("Text Preview:", h.payload.get("text", "")[:200])
+
+        # 4️⃣ Prepare clean context
+        contexts = self._prepare_context(retrieved_hits)
+
+        print(f"\n🧹 Contexts after cleaning: {len(contexts)}")
+
         for i, ctx in enumerate(contexts, 1):
-            print(f"\n--- Context {i} ---")
+            print(f"\n--- CLEAN CONTEXT {i} ---")
+            print("Score:", ctx["score"])
             print(ctx["text"][:400])
 
-        # 5️⃣ Build document-only context text
+        # 5️⃣ Build context text
         context_text = PromptBuilder.build_context_only(contexts)
+        print("\n🧠 FINAL CONTEXT TEXT LENGTH:", len(context_text))
+        print(context_text[:600])
 
-        # 6️⃣ Universal prompt (NO domain logic)
+        # 6️⃣ Prompt
         combined_prompt = f"""
 CONTEXT:
 {context_text}
@@ -81,9 +99,19 @@ Not mentioned in the document.
 ANSWER:
 """
 
+        print("\n🧾 PROMPT SENT TO LLM:")
+        print(combined_prompt[:800])
+
         # 7️⃣ Generate answer
         answer = self._llm.generate(prompt=combined_prompt)
-        answer = answer.strip()
+
+        print("\n🤖 RAW LLM OUTPUT:")
+        print(answer)
+
+        answer = (answer or "").strip()
+
+        if not answer:
+            print("❌ LLM RETURNED EMPTY ANSWER")
 
         return {
             "answer": answer,
@@ -98,7 +126,7 @@ ANSWER:
         }
 
     # =========================
-    # Generic context cleaning
+    # Context cleaning
     # =========================
     def _prepare_context(self, hits):
         contexts = []
@@ -107,20 +135,29 @@ ANSWER:
             payload = hit.payload or {}
             text = (payload.get("text") or "").strip()
 
+            print("\n🧪 CLEANING CHECK")
+            print("Original length:", len(text))
+            print("Preview:", text[:150])
+
             # Drop very small fragments
             if len(text) < 20:
+                print("❌ Dropped: too short")
                 continue
 
-            # Drop symbol-heavy noise
             alpha_ratio = sum(c.isalpha() for c in text) / max(len(text), 1)
+            print("Alpha ratio:", alpha_ratio)
+
             if alpha_ratio < 0.3:
+                print("❌ Dropped: low alpha ratio")
                 continue
 
-            # Drop generic boilerplate (document-agnostic)
             lowered = text.lower()
             boilerplate = ["page ", "copyright", "all rights reserved"]
             if any(b in lowered for b in boilerplate) and alpha_ratio < 0.5:
+                print("❌ Dropped: boilerplate")
                 continue
+
+            print("✅ Accepted")
 
             contexts.append({
                 "chunk_id": payload.get("chunk_id", hit.id),

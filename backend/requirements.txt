@@ -47,3 +47,8 @@ loguru
 python-json-logger
 prometheus-client
 psutil
+python-jose
+cryptography
+
+
+

@@ -1,32 +1,52 @@
 import streamlit as st
 from utils.session_state import (
-    get_uploaded_files,
     get_chat_history,
     add_chat_message
 )
-from utils.api_client import query_chat, get_documents
+from utils.api_client import get_documents
+from utils.chat_helpers import ask_chat
 
 
 def chat_section():
     st.subheader("💬 Chat with Your Documents")
 
     # -------------------------------------------------
-    # 1️⃣ Fetch documents from backend (Knowledge Repo)
+    # 0️⃣ AUTH CHECK (STANDARDIZED)
+    # -------------------------------------------------
+    if not st.session_state.logged_in:
+        st.error("Please login to use chat.")
+        return
+
+    token = st.session_state.token
+    if not token:
+        st.error("Authentication token missing. Please login again.")
+        return
+
+    # -------------------------------------------------
+    # 1️⃣ FETCH DOCUMENTS (JWT PROTECTED)
     # -------------------------------------------------
     try:
-        documents = get_documents(user_id=5)
+        documents = get_documents(token)
     except Exception as e:
         st.error(f"Failed to load documents: {e}")
         return
 
     if not documents:
-        st.info("📚 No documents found in your Knowledge Repository. Please upload first.")
+        st.info("📚 No documents found. Please upload first.")
         return
 
     # -------------------------------------------------
-    # 2️⃣ Document Selection
+    # 2️⃣ DOCUMENT SELECTION
     # -------------------------------------------------
-    doc_map = {doc["file_name"]: doc["id"] for doc in documents}
+    doc_map = {
+        (
+            doc.get("file_name")
+            or doc.get("filename")
+            or doc.get("original_filename")
+            or f"Document {doc['id']}"
+        ): doc["id"]
+        for doc in documents
+    }
 
     selected_doc_name = st.selectbox(
         "📄 Select a document to chat with",
@@ -34,23 +54,23 @@ def chat_section():
     )
 
     selected_doc_id = doc_map[selected_doc_name]
-
     st.success(f"Using document: {selected_doc_name}")
 
-    # -----------------------------
-    # Render Chat History
-    # -----------------------------
+    # -------------------------------------------------
+    # 3️⃣ RENDER CHAT HISTORY
+    # -------------------------------------------------
     for msg in get_chat_history():
-        role = msg["role"]
-        content = msg["content"]
+        with st.chat_message(msg["role"]):
+            content = msg["content"]
+            if isinstance(content, dict):
+                st.write(content.get("text", ""))
+            else:
+                st.write(content)
 
-        with st.chat_message(role):
-            st.write(content.get("text", ""))
-
-    # -----------------------------
-    # Chat Input
-    # -----------------------------
-    user_query = st.chat_input("Ask a question about the uploaded documents...")
+    # -------------------------------------------------
+    # 4️⃣ CHAT INPUT
+    # -------------------------------------------------
+    user_query = st.chat_input("Ask a question about the selected document...")
 
     if not user_query:
         return
@@ -63,43 +83,50 @@ def chat_section():
         content={"text": user_query}
     )
 
-    # -----------------------------
-    # Backend RAG Call
-    # -----------------------------
+    # -------------------------------------------------
+    # 5️⃣ BACKEND RAG CALL (JWT)
+    # -------------------------------------------------
     try:
         with st.spinner("Thinking..."):
-            response = query_chat(
+            response = ask_chat(
                 question=user_query,
-                user_id=5
+                token=token,
+                document_id=selected_doc_id
             )
     except Exception as e:
         st.error(str(e))
         return
 
-    # -----------------------------
-    # ✅ CORRECT RESPONSE PARSING
-    # -----------------------------
-    answer_data = response.get("answer_chunks", {})
+    # -------------------------------------------------
+    # 6️⃣ PARSE RAG RESPONSE
+    # -------------------------------------------------
+    answer_chunks = response.get("answer_chunks", [])
+
     answer_text = ""
+    sources = []
 
-    if isinstance(answer_data, dict):
-        answer_text = answer_data.get("answer", "")
+    if isinstance(answer_chunks, list) and answer_chunks:
+        answer_text = answer_chunks[0].get("answer", "")
+        sources = answer_chunks[0].get("sources", [])
 
-    # -----------------------------
-    # Render Assistant Response
-    # -----------------------------
+    # -------------------------------------------------
+    # 7️⃣ RENDER ASSISTANT RESPONSE
+    # -------------------------------------------------
     with st.chat_message("assistant"):
         if answer_text:
             st.write(answer_text)
         else:
             st.write("No answer generated.")
 
-    # -----------------------------
-    # Store Assistant Message
-    # -----------------------------
+        # if sources:
+        #     st.markdown("**Sources:**")
+        #     for src in sources:
+        #         st.write(src)
+
+    # -------------------------------------------------
+    # 8️⃣ STORE ASSISTANT MESSAGE
+    # -------------------------------------------------
     add_chat_message(
         role="assistant",
-        content={
-            "text": answer_text
-        }
+        content={"text": answer_text}
     )

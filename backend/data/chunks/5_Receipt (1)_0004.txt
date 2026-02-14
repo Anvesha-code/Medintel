@@ -1,0 +1,34 @@
+w
+GSTIN
+N/A
+State
+Uttar Pradesh
+Mobile Number
+6392386251
+Email ID
+choudharyharshitsonkar098@gmai
+l.com
+Description of Services
+SAC CODE
+Amount (INR)
+A) Release of Electricity Connection
+996912
+A.1) Line Charge
+855
+A.2) Cable Cost
+0
+A.3) Meter Cost
+2,800
+A.4) Other Estimate Charges
+0
+A.5) Advance Credit
+300
+B) Security Deposit
+0
+Total
+3,955
+Amount Chargeable (in words)
+Three Thousand Nine Hundred Fifty Five Rupees And Zero Paisa Only
+Executive Engineer
+EUDD_VRINDAVAN
+Estimated Cost Payment Detail

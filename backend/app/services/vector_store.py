@@ -14,6 +14,7 @@ class VectorStore:
     Handles all interactions with Qdrant:
     - Storing vectors
     - Searching vectors
+    - Deleting vectors (re-embedding safe)
     """
 
     def __init__(self):
@@ -41,7 +42,7 @@ class VectorStore:
                 id=str(uuid4()),
                 vector=record["embedding"],
                 payload={
-                    "user_id": metadata["user_id"],
+                    "user_id": str(metadata["user_id"]),  # ✅ FORCE STRING
                     "doc_id": metadata["doc_id"],
                     "chunk_index": metadata["chunk_index"],
                     "text": metadata["text"],
@@ -55,34 +56,64 @@ class VectorStore:
             points=points
         )
 
-        print(f" Stored {len(points)} vectors in Qdrant")
+        print(f"Stored {len(points)} vectors in Qdrant")
 
     # --------------------------------------------------
-    # SEARCH VECTORS (UPDATED WITH DOCUMENT FILTER)
+    # DELETE VECTORS BY DOCUMENT (CRITICAL FIX)
+    # --------------------------------------------------
+    def delete_by_document(self, user_id: str, document_id: int):
+        """
+        Deletes all vectors for a given user + document
+        Used before re-embedding
+        """
+        print(
+            f"Deleting Qdrant vectors for user_id={user_id}, document_id={document_id}"
+        )
+
+        delete_filter = Filter(
+            must=[
+                FieldCondition(
+                    key="user_id",
+                    match=MatchValue(value=str(user_id))
+                ),
+                FieldCondition(
+                    key="doc_id",
+                    match=MatchValue(value=document_id)
+                )
+            ]
+        )
+
+        self.client.delete(
+            collection_name=self.collection_name,
+            points_selector=delete_filter
+        )
+
+        print("Old embeddings deleted successfully")
+
+    # --------------------------------------------------
+    # SEARCH VECTORS
     # --------------------------------------------------
     def search(
         self,
         query_embedding,
-        user_id: int,
-        document_id: int | None = None,   # ✅ ADDED
+        user_id: str,
+        document_id: int | None = None,
         source_type: str | None = None,
         top_k: int = 5
     ):
-        print(" SEARCH CALLED")
-        print("   user_id:", user_id)
-        print("   document_id:", document_id)
-        print("   source_type:", source_type)
-        print("   top_k:", top_k)
+        print("SEARCH CALLED")
+        print("  user_id:", user_id)
+        print("  document_id:", document_id)
+        print("  source_type:", source_type)
+        print("  top_k:", top_k)
 
-        # Always filter by user
         must_conditions = [
             FieldCondition(
                 key="user_id",
-                match=MatchValue(value=user_id)
+                match=MatchValue(value=str(user_id))
             )
         ]
 
-        # ✅ Filter by document_id if selected
         if document_id:
             must_conditions.append(
                 FieldCondition(
@@ -91,7 +122,6 @@ class VectorStore:
                 )
             )
 
-        # Filter by source_type only if provided
         if source_type:
             must_conditions.append(
                 FieldCondition(
@@ -109,6 +139,14 @@ class VectorStore:
             query_filter=search_filter
         )
 
-        print(" QDRANT RESULTS:", len(results))
-        return results
+        print("QDRANT RESULTS:", len(results))
 
+        # 🔴 DEBUG EACH RESULT
+        for r in results:
+            print("---- RESULT ----")
+            print("Score:", r.score)
+            print("User ID:", r.payload.get("user_id"))
+            print("Doc ID:", r.payload.get("doc_id"))
+            print("Text Preview:", r.payload.get("text", "")[:150])
+
+        return results
